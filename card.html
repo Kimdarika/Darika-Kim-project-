@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Container */
+.discount-card {
+  position: relative;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Discount badge */
+.discount-card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e63946;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+/* Image */
+.discount-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Content area */
+.discount-card .content {
+  padding: 16px;
+}
+
+.discount-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.discount-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Price styling */
+.discount-card .price {
+  margin-bottom: 12px;
+}
+
+.discount-card .old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.discount-card .new-price {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Button */
+.discount-card button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.discount-card button:hover {
+  background-color: #45a049;
+}
+
+/* Hover effect on card */
+.discount-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+</style>
+<body>
+    <div class="discount-card">
+        <div class="badge">-30%</div>
+        <img src="https://i.pinimg.com/1200x/25/07/02/250702a483313a2f8a7c4677a0d7a764.jpg" alt="Face Sunscreen">
+        <div class="content">
+            <h3>Face Sunscreen SPF 50</h3>
+            <p>Lightweight & non-greasy daily protection.</p>
+            <div class="price">
+            <span class="old-price">$25.00</span>
+            <span class="new-price">$17.50</span>
+            </div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

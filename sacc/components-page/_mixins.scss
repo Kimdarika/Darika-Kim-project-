@@ -1,0 +1,54 @@
+@mixin header-page1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: transparent;
+}
+@mixin header-page2 {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #727272;
+    font-weight: 600;
+}
+@mixin header-page3 {
+    background-color: #ffc107;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: black;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+@mixin center-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 50px;
+    background-color:  rgba(254, 22, 30, 0.093);
+}
+@mixin button{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+@mixin grid{
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+@mixin input-textera{
+    flex: 1;                   /* fill the rest of label */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+@mixin focus{
+    border-color: #4facfe;
+    outline: none;
+}

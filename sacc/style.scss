@@ -1,0 +1,16 @@
+@import "./components-page/mixins";
+@import "./components/components-home/header";
+@import "./components/components-home/main";
+@import "./components/components-home/section";
+@import "./components/components-home/article";
+@import "./components/components-home/aside";
+@import "./components/components-home/nav";
+@import "./components/components-home/form";
+@import "./components/components-home/footer";
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

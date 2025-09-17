@@ -1,0 +1,78 @@
+
+header {
+    @include header-page1;
+    padding: 20px 100px;
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    width: 100%;
+    
+    .logo{
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ffc107;
+    }
+    
+
+    nav a {
+      @include header-page2;
+      font-size: 20px;
+      &:hover{
+        color: orange;
+      }
+    }
+    .btn-signup {
+      @include header-page3;
+    }
+    /* Dropdown container */
+  .dropdown {
+    position: relative;           /* allows dropdown-content to be positioned under it */
+    display: inline-block;        /* sits inline with other <li> items */
+  }
+
+  /* The main link / button */
+  .dropbtn {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  /* Dropdown menu (hidden by default) */
+  .dropdown-content {
+    display: none;                /* hide initially */
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-radius: 4px;
+  }
+
+  /* Links inside dropdown */
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Hover state for inner links */
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Show dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Optional: change button background when dropdown is open */
+  .dropdown:hover .dropbtn {
+    background-color: #e0e0e0;
+  }
+
+}
