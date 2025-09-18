@@ -1,0 +1,205 @@
+
+header{
+    background-image: url("/image/6.jpg");
+    font-family: sans-serif;
+    background-size: cover;      
+    background-position: center;    
+    background-attachment: fixed;    
+    background-repeat: no-repeat; 
+    .fa-card{
+        margin:0px 60px ;
+        padding: 30px 0px;
+    }
+    .card-face{
+        display: flex;
+        gap: 25px;
+    }
+    .card-face-15{
+        display: flex;
+        gap: 25px;
+        padding:30px 60px;
+    }
+    .product-card {
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .product-card:hover {
+    transform: translateY(-5px);
+    }
+
+    .product-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    }
+
+    .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #c2185b;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    }
+
+    .wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #c2185b;
+    cursor: pointer;
+    }
+
+    .product-info {
+    padding: 15px;
+    }
+
+    .product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    }
+
+    .price {
+    font-size: 16px;
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+    }
+    del{
+        color: gray;
+        padding-left: 20px;
+    }
+
+    .skin-type {
+    font-size: 13px;
+    color: #c2185b;
+    margin-bottom: 5px;
+    }
+
+    .ingredients {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+    }
+
+    .rating {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    }
+
+    .rating span {
+    font-size: 12px;
+    color: #888;
+    }
+
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c2185b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+    background-color: #a3154b;
+    }
+    .carousel-container {
+        margin: 0 auto;
+        background-color: rgba(0, 0, 255, 0.268);
+
+    .carousel {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+        margin:0px 60px;
+        padding: 40px;
+        &::-webkit-scrollbar {
+        height: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 4px;
+        display: none;
+        }
+
+        .product {
+        flex: 0 0 auto;
+        width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        scroll-snap-align: start;
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-title {
+            font-size: 14px;
+            margin: 10px 0 5px;
+            color: #0366d6;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+            text-decoration: underline;
+            }
+        }
+
+        .rating {
+            color: #f5a623;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .prime {
+            font-size: 12px;
+            color: #0073bb;
+            margin-top: 5px;
+        }
+        }
+    }
+    }
+
+ 
+}

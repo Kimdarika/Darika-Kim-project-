@@ -1,6 +1,14 @@
+
 header{
-     .fa-card{
-        margin: 60px;
+    background-image: url("/image/1.jpg");
+    font-family: sans-serif;
+    background-size: cover;      
+    background-position: center;    
+    background-attachment: fixed;    
+    background-repeat: no-repeat; 
+    .fa-card{
+        margin:0px 60px ;
+        padding: 30px 0px;
     }
     .card-face{
         display: flex;
@@ -120,4 +128,78 @@ header{
     .btn:hover {
     background-color: #a3154b;
     }
+    .carousel-container {
+        margin: 0 auto;
+        background-color: rgba(0, 0, 255, 0.268);
+
+    .carousel {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+        margin:0px 60px;
+        padding: 40px;
+        &::-webkit-scrollbar {
+        height: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 4px;
+        display: none;
+        }
+
+        .product {
+        flex: 0 0 auto;
+        width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        scroll-snap-align: start;
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-title {
+            font-size: 14px;
+            margin: 10px 0 5px;
+            color: #0366d6;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+            text-decoration: underline;
+            }
+        }
+
+        .rating {
+            color: #f5a623;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .prime {
+            font-size: 12px;
+            color: #0073bb;
+            margin-top: 5px;
+        }
+        }
+    }
+    }
+
+ 
 }
