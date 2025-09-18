@@ -49,10 +49,16 @@ article{
         }
     }
     .international-shipping {
-        background-color: #fff0f5;
+        background-image: url("/image/2.jpg");
+        font-family: sans-serif;
+        background-size: cover;      
+        background-position: center;    
+        background-attachment: fixed;    
+        background-repeat: no-repeat;
         padding: 60px 20px;
         text-align: center;
         .shipping-content {
+            background-color: #d14a773f;
             display: flex;
             flex-wrap: wrap;
             max-width: 1200px;
@@ -66,12 +72,12 @@ article{
                 text-align: center;
                 h2 {
                     font-size: 30px;
-                    color: #d54f7c;
+                    color: #f80858;
                 }
                 p {
                     font-size:20px;
                     margin: 20px 0;
-                    color: #444;
+                    color: #ffffff;
                 }
                 .region-list {
                     list-style: none;
@@ -96,7 +102,7 @@ article{
                 .btn {
                     display: inline-block;
                     margin-top: 20px;
-                    background-color: #d54f7c;
+                    background-color: #f43474;
                     color: #fff;
                     padding: 12px 24px;
                     border-radius: 5px;
@@ -180,8 +186,13 @@ article{
         }
     }
     .cta-section {
-        background-color: #ffccdd99;
-        color: rgb(130, 130, 130);
+        background-image: url("/image/4.png");
+        font-family: sans-serif;
+        background-size: cover;      
+        background-position: center;    
+        background-attachment: fixed;    
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
         text-align: center;
         padding: 60px 20px;
         border-radius: 12px;

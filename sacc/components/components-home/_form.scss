@@ -1,4 +1,10 @@
 form{
+    background-image: url("/image/6.jpg");
+    font-family: sans-serif;
+    background-size: cover;      
+    background-position: center;    
+    background-attachment: fixed;    
+    background-repeat: no-repeat;
     .container {
     display: flex;
     width: 900px;

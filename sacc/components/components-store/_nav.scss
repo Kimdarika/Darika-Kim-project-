@@ -1,17 +1,18 @@
 nav{
+
     .online-store {
         padding: 60px 20px;
-        background-color: #ebd8d8;
         text-align: center;
+        color: #232323;
         p{
             font-family: sans-serif;
             font-size: 20px;
-            padding:0px 500px;
+            padding:0px 500px 25px;
         }
         h2 {
             font-size: 30px;
             margin-bottom: 40px;
-            color: #333;
+            color:orange;
         }
         .store-grid {
             display: grid;

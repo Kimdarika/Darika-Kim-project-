@@ -288,18 +288,18 @@ main .product-info a:hover {
 
 nav .online-store {
   padding: 60px 20px;
-  background-color: #ebd8d8;
   text-align: center;
+  color: #232323;
 }
 nav .online-store p {
   font-family: sans-serif;
   font-size: 20px;
-  padding: 0px 500px;
+  padding: 0px 500px 25px;
 }
 nav .online-store h2 {
   font-size: 30px;
   margin-bottom: 40px;
-  color: #333;
+  color: orange;
 }
 nav .online-store .store-grid {
   display: grid;
@@ -394,11 +394,17 @@ article .store-locator .store-list .store-card p {
   line-height: 1.4;
 }
 article .international-shipping {
-  background-color: #fff0f5;
+  background-image: url("/image/2.jpg");
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   padding: 60px 20px;
   text-align: center;
 }
 article .international-shipping .shipping-content {
+  background-color: rgba(209, 74, 119, 0.2470588235);
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -414,12 +420,12 @@ article .international-shipping .shipping-content .shipping-text {
 }
 article .international-shipping .shipping-content .shipping-text h2 {
   font-size: 30px;
-  color: #d54f7c;
+  color: #f80858;
 }
 article .international-shipping .shipping-content .shipping-text p {
   font-size: 20px;
   margin: 20px 0;
-  color: #444;
+  color: #ffffff;
 }
 article .international-shipping .shipping-content .shipping-text .region-list {
   list-style: none;
@@ -443,7 +449,7 @@ article .international-shipping .shipping-content .shipping-text .region-list li
 article .international-shipping .shipping-content .shipping-text .btn {
   display: inline-block;
   margin-top: 20px;
-  background-color: #d54f7c;
+  background-color: #f43474;
   color: #fff;
   padding: 12px 24px;
   border-radius: 5px;
@@ -524,8 +530,13 @@ article .store-categories .category-grid .category-card .btn:hover {
   background-color: #b93c67;
 }
 article .cta-section {
-  background-color: rgba(255, 204, 221, 0.6);
-  color: rgb(130, 130, 130);
+  background-image: url("/image/4.png");
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 60px 20px;
   border-radius: 12px;
