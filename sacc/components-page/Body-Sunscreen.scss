@@ -1,0 +1,13 @@
+@import "./mixins";
+@import "../components/components-product/face/type-of-face/header";
+@import "../components/components-product/face/type-of-face/footer";
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("/image/1.jpg");
+    background-size: cover;      
+    background-position: center;    
+    background-attachment: fixed;    
+    background-repeat: no-repeat;   
+}
