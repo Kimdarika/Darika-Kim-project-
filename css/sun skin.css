@@ -29,7 +29,7 @@ header nav a {
   padding: 14px 20px;
   color: #333;
   border-radius: 4px;
-  background: linear-gradient(to right, #fff, rgba(255, 166, 0, 0.634));
+  background: linear-gradient(to right, #fff, pink);
   font-size: 20px;
 }
 header nav a:hover {

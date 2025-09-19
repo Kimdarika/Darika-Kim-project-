@@ -8,11 +8,9 @@ header {
     width: 100%;
     
      .logo{
-        font-size: 3rem;
-        font-weight: 700;
-        color: #ffc107;
         img{
           width: 300px;
+          padding: 30px 0px 30px;
         }
     }
     
@@ -21,7 +19,7 @@ header {
       @include header-page2;
       font-size: 20px;
       &:hover{
-        color: orange;
+        color: rgb(247, 126, 146);
       }
     }
     .btn-signup {

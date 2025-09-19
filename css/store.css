@@ -32,7 +32,7 @@ header nav a {
   padding: 14px 20px;
   color: #333;
   border-radius: 4px;
-  background: linear-gradient(to right, #fff, rgba(255, 166, 0, 0.634));
+  background: linear-gradient(to right, #fff, pink);
   font-size: 20px;
 }
 header nav a:hover {
@@ -56,7 +56,7 @@ header .dropbtn {
   padding: 10px 15px;
   color: #333;
   text-decoration: none;
-  background: linear-gradient(to right, #fff, orange);
+  background: linear-gradient(to right, #fff, pink);
   border-radius: 4px;
   transition: background-color 0.2s;
 }
@@ -103,7 +103,7 @@ main .h1-head {
   font-family: serif;
   padding: 50px 50px 50px 0px;
   font-size: 70px;
-  color: #ffc107;
+  color: rgb(248, 95, 121);
 }
 main .img-fluid {
   width: 580px;
@@ -123,7 +123,7 @@ main .hero-buttons a {
   font-size: 20px;
 }
 main .btn-primary {
-  background-color: #ffc107;
+  background-color: rgb(248, 95, 121);
   color: black;
 }
 main .btn-secondary {
@@ -131,7 +131,7 @@ main .btn-secondary {
   color: #575555;
 }
 main .btn-secondary:hover {
-  background-color: #ffc107;
+  background-color: rgb(248, 95, 121);
 }
 main .row {
   display: flex;

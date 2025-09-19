@@ -6,52 +6,21 @@ main{
         background-size: cover;      
         background-position: center;    
         background-attachment: fixed;    
-        background-repeat: no-repeat; 
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        padding: 327px ;
-        &::before {
-        content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 700px;
-            padding: 20px;
-            background-color: rgba(255, 192, 203, 0.389);
-            display: none;
-        }
-        h1 {
-            font-size: 70px;
-            margin-bottom: 15px;
-            font-family: a;
-            color: orange;
-        }
-        p {
-            font-size: 20px;
-            line-height: 1.5;
-        }
+        background-repeat: no-repeat;    
     }
     .faq-section {
         color: white;
         background-color: rgba(255, 192, 203, 0.37);
         padding: 100px 50px;
+        h4{
+            font-family: a;
+        }
         .faq-subtitle {
-            color: #ffbd31;
+            color: rgb(246, 115, 137);
             text-align: center;
             padding-bottom: 25px;
-            font-family: sans-serif;
             font-size: 30px;
+            font-family: a;
         }
         .all{
             font-size: 20px;
@@ -64,31 +33,26 @@ main{
             margin-bottom: 15px;
             border-radius: 8px;
             overflow: hidden;
-            [open] {
-                background-color: #ffb700;
-                color: black;
-                content: "–";
-            }
         }
         .faq-question {
             list-style: none;
             padding: 18px 20px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
             position: relative;
             &::after {
                 content: "+";
                 position: absolute;
                 right: 20px;
-                font-size: 20px;
+                font-size: 15px;
                 content: "–";
             }
         } 
         .faq-answer {
             padding: 15px 20px;
-            font-size: 14px;
-            color: #333;
-            background-color: #ffb700;
+            font-size: 15px;
+            color: #ffffff;
+            background-color: pin;
         } 
     }
     .faq-section-all{
@@ -97,7 +61,6 @@ main{
         padding: 0px 50px;
         display: flex;
         flex-wrap: wrap;
-        padding: 50px;
         justify-content: space-between;
         h1{
             color: black;
@@ -118,7 +81,7 @@ main{
             padding: 0px 300px 25px;
         }
         .faq-item {
-            background-color: rgb(154, 152, 152);
+            background-color:rgb(42, 42, 42);
             margin-bottom: 15px;
             border-radius: 8px;
             overflow: hidden;
@@ -133,7 +96,7 @@ main{
             list-style: none;
             padding: 18px 20px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
             position: relative;
             &::after {
                 content: "+";
@@ -146,8 +109,8 @@ main{
         .faq-answer {
             padding: 15px 20px;
             font-size: 14px;
-            color: #333;
-            background-color: #ffb700;
+            color: #ffffff;
+            background-color:pink;
         } 
     }
     .contact-support {
@@ -171,7 +134,7 @@ main{
                 font-size: 1rem;
             }
             a {
-                color: #ff7e5f;
+                color: rgb(255, 124, 92)
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 15px;
@@ -191,29 +154,29 @@ main{
             textarea{
                 padding: 12px 15px;
                 font-size: 15px;
-                border: 1px solid orange;
+                border: 1px solid pink;
                 border-radius: 8px;
                 outline: none;
                 transition: all 0.3s ease;
                 &:focus {
-                    border-color: orange;
+                    border-color: pink;
                     box-shadow: 0 0 8px rgba(255,126,95,0.3);
                 }
             }
             input{
                 padding: 12px 15px;
                 font-size: 15px;
-                border: 1px solid orange;
+                border: 1px solid pink;
                 border-radius: 8px;
                 outline: none;
                 transition: all 0.3s ease;
                 &:focus {
-                    border-color: #ff7e5f;
+                    border-color: pink;
                     box-shadow: 0 0 8px rgba(255,126,95,0.3);
                 }
             }
             button {
-                background:orange;
+                background:pink;
                 color: #fff;
                 padding: 12px;
                 font-size: 15px;

@@ -17,13 +17,9 @@ header {
   /* Show dropdown menu on hover */
   /* Optional: change button background when dropdown is open */
 }
-header .logo {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #ffc107;
-}
 header .logo img {
   width: 300px;
+  padding: 30px 0px 30px;
 }
 header nav a {
   margin-left: 2rem;
@@ -32,11 +28,11 @@ header nav a {
   padding: 14px 20px;
   color: #333;
   border-radius: 4px;
-  background: linear-gradient(to right, #fff, rgba(255, 166, 0, 0.634));
+  background: linear-gradient(to right, #fff, pink);
   font-size: 20px;
 }
 header nav a:hover {
-  color: orange;
+  color: rgb(247, 126, 146);
 }
 header .btn-signup {
   background-color: #ffc107;
