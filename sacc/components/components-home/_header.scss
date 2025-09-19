@@ -17,14 +17,19 @@ header {
         font-size: 3rem;
         font-weight: 700;
         color: #ffc107;
+        img{
+          width: 300px;
+        }
     }
     
 
     nav a {
+      
+
       @include header-page2;
       font-size: 20px;
       &:hover{
-        color: orange;
+        color: rgb(224, 158, 36);
       }
     }
     .btn-signup {

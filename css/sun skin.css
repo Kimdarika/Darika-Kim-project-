@@ -25,8 +25,11 @@ header .logo {
 header nav a {
   margin-left: 2rem;
   text-decoration: none;
-  color: #727272;
   font-weight: 600;
+  padding: 14px 20px;
+  color: #333;
+  border-radius: 4px;
+  background: linear-gradient(to right, #fff, rgba(255, 166, 0, 0.634));
   font-size: 20px;
 }
 header nav a:hover {
