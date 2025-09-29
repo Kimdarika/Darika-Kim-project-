@@ -15,13 +15,6 @@ header {
   background-position: center;
   height: 10vh;
   width: 100%;
-  /* Dropdown container */
-  /* The main link / button */
-  /* Dropdown menu (hidden by default) */
-  /* Links inside dropdown */
-  /* Hover state for inner links */
-  /* Show dropdown menu on hover */
-  /* Optional: change button background when dropdown is open */
 }
 header .logo img {
   width: 300px;
@@ -50,8 +43,8 @@ header .btn-signup {
   font-weight: 600;
 }
 header .dropdown {
-  position: relative; /* allows dropdown-content to be positioned under it */
-  display: inline-block; /* sits inline with other <li> items */
+  position: relative;
+  display: inline-block;
 }
 header .dropbtn {
   display: block;
@@ -63,7 +56,7 @@ header .dropbtn {
   transition: background-color 0.2s;
 }
 header .dropdown-content {
-  display: none; /* hide initially */
+  display: none;
   position: absolute;
   background-color: #fff;
   min-width: 160px;
@@ -85,6 +78,33 @@ header .dropdown:hover .dropdown-content {
 }
 header .dropdown:hover .dropbtn {
   background-color: #e0e0e0;
+}
+@media (max-width: 800px) and (min-width: 429px) {
+  header .logo img {
+    width: 200px;
+    padding: 30px 0px 20px;
+  }
+  header nav a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 14px 4px;
+    color: #333;
+    border-radius: 4px;
+    background: linear-gradient(to right, #fff, pink);
+    font-size: 16px;
+  }
+  header nav a:hover {
+    color: rgb(224, 158, 36);
+  }
+  header .btn-signup {
+    background-color: #ffc107;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: black;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
 }
 
 main {
@@ -294,6 +314,18 @@ main .product-info a {
 main .product-info a:hover {
   background: #ff6333;
 }
+@media (max-width: 800px) and (min-width: 429px) {
+  main .img-fluid {
+    width: 600px;
+    border-radius: 10px 10px;
+    padding-right: 50px;
+  }
+  main .h1-head {
+    font-size: 55px;
+    margin-bottom: 1rem;
+    font-family: a;
+  }
+}
 
 section {
   background-image: url("/image/7.png");
@@ -365,7 +397,6 @@ section .featured-products .products-grid .product-card .product-info a {
 section .featured-products .products-grid .product-card .product-info a:hover {
   background: #ff6333;
 }
-
 article .article-all {
   background-color: rgb(251, 200, 207);
   padding: 100px;
@@ -378,7 +409,7 @@ article .choose {
   font-size: 20px;
   text-align: center;
   margin-left: 165px;
-  margin: 25px 165px 50px 165px;
+  margin: 25px 15px 50px 15px;
 }
 article .features {
   display: grid;
@@ -698,7 +729,7 @@ form .stars {
   flex: 1 1 300px;
 }
 .footer .footer-container .footer-about .logo {
-  font-size: 28px;
+  font-size: 2px;
   margin-bottom: 15px;
 }
 .footer .footer-container .footer-about p {

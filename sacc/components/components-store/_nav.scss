@@ -57,6 +57,18 @@ nav{
             }
         }
     }
+    @media (max-width: 800px) and (min-width: 429px) {
+        .online-store {
+            padding: 60px 20px;
+            text-align: center;
+            color: #232323;
+            p{
+                font-family: sans-serif;
+                font-size: 20px;
+                padding:0px 200px 20px; 
+            }
+        }
+    }
 }
 
 

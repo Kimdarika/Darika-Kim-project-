@@ -1,38 +1,42 @@
 
 header {
+    background-image: url("/image/9.png");
+    font-family: sans-serif;
+    background-size: cover;      
+    background-position: center;    
+    background-attachment: fixed;    
+    background-repeat: no-repeat; 
     @include header-page1;
     padding: 20px 100px;
     background-size: cover;
     background-position: center;
     height: 10vh;
     width: 100%;
-     .logo{
-        font-size: 3rem;
-        font-weight: 700;
-        color: #ffc107;
+    
+    .logo{
         img{
           width: 300px;
+          padding: 30px 0px 20px
         }
     }
     
 
     nav a {
+      
+
       @include header-page2;
       font-size: 20px;
       &:hover{
-        color: orange;
+        color: rgb(224, 158, 36);
       }
     }
     .btn-signup {
       @include header-page3;
     }
-    /* Dropdown container */
   .dropdown {
-    position: relative;           /* allows dropdown-content to be positioned under it */
-    display: inline-block;        /* sits inline with other <li> items */
+    position: relative;    
+    display: inline-block;        
   }
-
-  /* The main link / button */
   .dropbtn {
     display: block;
     padding: 10px 15px;
@@ -43,9 +47,8 @@ header {
     transition: background-color 0.2s;
   }
 
-  /* Dropdown menu (hidden by default) */
   .dropdown-content {
-    display: none;                /* hide initially */
+    display: none;             
     position: absolute;
     background-color: #fff;
     min-width: 160px;
@@ -53,8 +56,6 @@ header {
     z-index: 1;
     border-radius: 4px;
   }
-
-  /* Links inside dropdown */
   .dropdown-content a {
     color: #333;
     padding: 10px 15px;
@@ -62,19 +63,42 @@ header {
     display: block;
   }
 
-  /* Hover state for inner links */
   .dropdown-content a:hover {
     background-color: #f0f0f0;
   }
 
-  /* Show dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-  /* Optional: change button background when dropdown is open */
   .dropdown:hover .dropbtn {
     background-color: #e0e0e0;
   }
 
+  @media (max-width: 800px) and (min-width: 429px) {
+    .logo{
+        img{
+          width: 200px;
+          padding: 30px 0px 20px
+        }
+    }
+    
+
+    nav a {
+      
+      text-decoration: none;
+      font-weight: 500;
+      padding:14px 4px ;
+      color: #333;
+      border-radius: 4px;
+      background: linear-gradient(to right, #fff, pink);
+      font-size: 16px;
+      &:hover{
+        color: rgb(224, 158, 36);
+      }
+    }
+    .btn-signup {
+      @include header-page3;
+    }
+  }
+  
 }

@@ -84,6 +84,33 @@ header .dropdown:hover .dropdown-content {
 header .dropdown:hover .dropbtn {
   background-color: #e0e0e0;
 }
+@media (max-width: 800px) and (min-width: 429px) {
+  header .logo img {
+    width: 200px;
+    padding: 30px 0px 20px;
+  }
+  header nav a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 14px 4px;
+    color: #333;
+    border-radius: 4px;
+    background: linear-gradient(to right, #fff, pink);
+    font-size: 15px;
+  }
+  header nav a:hover {
+    color: rgb(224, 158, 36);
+  }
+  header .btn-signup {
+    background-color: #ffc107;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: black;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
 
 main {
   font-family: sans-serif;
@@ -291,6 +318,18 @@ main .product-info a {
 main .product-info a:hover {
   background: #ff6333;
 }
+@media (max-width: 800px) and (min-width: 429px) {
+  main .img-fluid {
+    width: 500px;
+    border-radius: 100px 0px;
+    padding-right: 50px;
+  }
+  main .h1-head {
+    font-size: 55px;
+    margin-bottom: 1rem;
+    font-family: a;
+  }
+}
 
 nav .online-store {
   padding: 60px 20px;
@@ -348,6 +387,18 @@ nav .online-store .store-grid .store-card .btn {
 }
 nav .online-store .store-grid .store-card .btn:hover {
   background-color: #0056b3;
+}
+@media (max-width: 800px) and (min-width: 429px) {
+  nav .online-store {
+    padding: 60px 20px;
+    text-align: center;
+    color: #232323;
+  }
+  nav .online-store p {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0px 200px 20px;
+  }
 }
 
 article .store-locator {
@@ -730,6 +781,35 @@ article .store .store-info .info-block p {
 article .store .store-container {
   width: 500px;
   border-radius: 180px 0px;
+}
+@media (max-width: 800px) and (min-width: 429px) {
+  article .store-categories {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  article .store-categories .subheading {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+    padding: 0px 150px;
+  }
+  article .search-filters {
+    padding: 100px 100px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  article .search-filters p {
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  article .store {
+    gap: 50px;
+  }
+  article .img {
+    width: 100px;
+    height: 50vh;
+  }
 }
 
 form {

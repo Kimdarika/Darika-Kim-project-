@@ -1,14 +1,19 @@
 header {
+  background-image: url("/image/9.png");
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
   background: transparent;
-  padding: 20px 100px;
   background-size: cover;
   background-position: center;
   height: 10vh;
-  width: 100%;
+  padding: 20px 100px;
   /* Dropdown container */
   /* The main link / button */
   /* Dropdown menu (hidden by default) */
@@ -19,7 +24,7 @@ header {
 }
 header .logo img {
   width: 300px;
-  padding: 30px 0px 30px;
+  padding: 30px 0px 20px;
 }
 header nav a {
   margin-left: 2rem;
@@ -32,7 +37,7 @@ header nav a {
   font-size: 20px;
 }
 header nav a:hover {
-  color: rgb(247, 126, 146);
+  color: rgb(224, 158, 36);
 }
 header .btn-signup {
   background-color: #ffc107;
@@ -108,101 +113,73 @@ header .dropdown:hover .dropbtn {
   }
 }
 
-main .hero {
-  padding: 50px 0;
-  background-color: #fef6f8;
-}
-main .hero .hero-content {
+main .shop-layout {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  padding: 20px;
+  gap: 10px;
+  font-family: sans-serif;
 }
-main .hero .hero-content .hero-text {
+main .shop-layout .categories {
   flex: 1;
 }
-main .hero .hero-content .hero-text h1 {
-  font-size: 80px;
-  line-height: 1.4;
-  font-family: a;
+main .shop-layout .categories h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
-main .hero .hero-content .hero-text span {
-  color: #c2185b;
+main .shop-layout .categories ul {
+  list-style: none;
+  padding-left: 0;
+  list-style: none;
+  padding-left: 15px;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
-main .hero .hero-content .hero-text p {
-  margin: 20px 0;
-  color: #777;
-  font-size: 20px;
+main .shop-layout .categories li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  list-style: none;
+  padding-left: 15px;
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
-main .hero .hero-content .hero-text .btn {
-  padding: 12px 25px;
-  background-color: #c2185b;
-  color: white;
-  border-radius: 25px;
+main .shop-layout .categories li a {
   text-decoration: none;
 }
-main .hero .hero-content .hero-img {
-  max-width: 100%;
-  height: 80vh;
-  border-radius: 180px 0px;
+main .shop-layout .products {
+  flex: 3;
 }
-main .section-title {
-  text-align: center;
-  font-size: 28px;
-  margin: 60px 0 30px;
-  color: #222;
+main .shop-layout .products h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
-main .sunscreen-grid {
+main .shop-layout .products p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+main .shop-layout .products .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-bottom: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 20px 0px;
 }
-main .sunscreen-grid .category-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+main .shop-layout .products .product-grid .product-card {
   text-align: center;
-  transition: all 0.3s ease;
 }
-main .sunscreen-grid .category-card:hover {
-  transform: translateY(-5px);
-}
-main .sunscreen-grid .category-card img {
+main .shop-layout .products .product-grid .product-card img {
   width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
-main .sunscreen-grid .category-card h3 {
-  font-size: 20px;
-  margin: 15px 0 5px;
-  color: #c2185b;
-}
-main .sunscreen-grid .category-card p {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 15px;
-}
-main .sunscreen-grid .category-card .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #c2185b;
-  color: white;
-  border-radius: 20px;
-  text-decoration: none;
-  margin-bottom: 20px;
-  transition: background-color 0.2s ease;
-}
-main .sunscreen-grid .category-card .btn:hover {
-  background-color: #a3154b;
+main .shop-layout .products .product-grid .product-card img h3 {
+  font-size: 0.95rem;
+  color: #333;
 }
 
 /* Footer */
 .footer {
   padding: 10px 20px 0;
   background-color: pink;
+  font-family: sans-serif;
 }
 .footer .footer-container {
   display: flex;
@@ -216,7 +193,7 @@ main .sunscreen-grid .category-card .btn:hover {
   flex: 1 1 300px;
 }
 .footer .footer-container .footer-about .logo {
-  font-size: 28px;
+  font-size: 2px;
   margin-bottom: 15px;
 }
 .footer .footer-container .footer-about p {
@@ -235,8 +212,8 @@ main .sunscreen-grid .category-card .btn:hover {
   flex: 2 1 600px;
   gap: 50px;
 }
-.footer .footer-container .footer-links h3 {
-  font-size: 14px;
+.footer .footer-container .footer-links h2 {
+  font-size: 13px;
   text-transform: uppercase;
   margin-bottom: 10px;
   border-bottom: 1px solid #444;
@@ -287,4 +264,4 @@ main .sunscreen-grid .category-card .btn:hover {
     flex-direction: column;
     gap: 10px;
   }
-}/*# sourceMappingURL=face skin.css.map */
+}/*# sourceMappingURL=shop-now.css.map */

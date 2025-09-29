@@ -1,4 +1,10 @@
 header {
+  background-image: url("/image/9.png");
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,21 +15,10 @@ header {
   background-position: center;
   height: 10vh;
   width: 100%;
-  /* Dropdown container */
-  /* The main link / button */
-  /* Dropdown menu (hidden by default) */
-  /* Links inside dropdown */
-  /* Hover state for inner links */
-  /* Show dropdown menu on hover */
-  /* Optional: change button background when dropdown is open */
-}
-header .logo {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #ffc107;
 }
 header .logo img {
   width: 300px;
+  padding: 30px 0px 20px;
 }
 header nav a {
   margin-left: 2rem;
@@ -36,7 +31,7 @@ header nav a {
   font-size: 20px;
 }
 header nav a:hover {
-  color: orange;
+  color: rgb(224, 158, 36);
 }
 header .btn-signup {
   background-color: #ffc107;
@@ -48,8 +43,8 @@ header .btn-signup {
   font-weight: 600;
 }
 header .dropdown {
-  position: relative; /* allows dropdown-content to be positioned under it */
-  display: inline-block; /* sits inline with other <li> items */
+  position: relative;
+  display: inline-block;
 }
 header .dropbtn {
   display: block;
@@ -61,7 +56,7 @@ header .dropbtn {
   transition: background-color 0.2s;
 }
 header .dropdown-content {
-  display: none; /* hide initially */
+  display: none;
   position: absolute;
   background-color: #fff;
   min-width: 160px;
@@ -83,6 +78,33 @@ header .dropdown:hover .dropdown-content {
 }
 header .dropdown:hover .dropbtn {
   background-color: #e0e0e0;
+}
+@media (max-width: 800px) and (min-width: 429px) {
+  header .logo img {
+    width: 200px;
+    padding: 30px 0px 20px;
+  }
+  header nav a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 14px 4px;
+    color: #333;
+    border-radius: 4px;
+    background: linear-gradient(to right, #fff, pink);
+    font-size: 16px;
+  }
+  header nav a:hover {
+    color: rgb(224, 158, 36);
+  }
+  header .btn-signup {
+    background-color: #ffc107;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: black;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
 }
 
 main .hero {

@@ -222,5 +222,17 @@ main {
     .product-info a:hover {
         background: #ff6333;
     }
+    @media (max-width: 800px) and (min-width: 429px) {
+        .img-fluid {
+            width: 600px;
+            border-radius: 10px 10px;
+            padding-right: 50px;
+        }
+        .h1-head {
+            font-size: 55px;
+            margin-bottom: 1rem;
+            font-family: a;
+        }
+    }
 
 }

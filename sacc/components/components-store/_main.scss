@@ -95,10 +95,7 @@ main {
             border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
-            // box-shadow: $box-shadow;
-            // background-color: $card-bg;
             transition: transform 0.3s ease;
-
             &:hover {
             transform: translateY(-5px);
             border-radius: 150px 0px;
@@ -218,9 +215,19 @@ main {
         font-weight: bold;
         transition: background 0.3s ease;
     }
-
     .product-info a:hover {
         background: #ff6333;
     }
-
+    @media (max-width: 800px) and (min-width: 429px) {
+        .img-fluid {
+            width: 500px;
+            border-radius: 100px 0px;
+            padding-right: 50px;
+        }
+        .h1-head {
+            font-size: 55px;
+            margin-bottom: 1rem;
+            font-family: a;
+        }
+    }
 }
