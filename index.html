@@ -12,12 +12,16 @@
 </head>
 <style>
     /* Base styles for all devices */
-@media (min-width: 428px) {
+@media (max-width: 428px) {
+
     body{
         overflow-x: hidden;
     }
     .hero{
         text-align: center;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
     }
     .h1{
         margin-left: -50px;
@@ -37,20 +41,14 @@
     .login-section{
         margin: 0px 200px 0px 0px;
     }
-    .footer{
+     .footer-container{
+        display: flex;
         margin: 0px 0px;
         margin-left: -100px;
-
-    }
-    .footer-container{
-        display: flex;
     }
     .footer-links{
         width: 380px;
-    }
-
-    
-    
+    } 
 }
 
 </style>
