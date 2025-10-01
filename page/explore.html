@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore product</title>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<style>
+body{
+    overflow-x: hidden;
+}
+span{
+    color: rgb(251, 87, 115);
+}
+header{
+    width: 1380px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: -40px;
+    margin-top: -20px;
+}
+
+.explore-products {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.explore-products h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.explore-products .subtitle {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.category-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.category-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.category-card h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e85c2c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .explore-products h2 {
+    font-size: 1.8rem;
+  }
+  .category-card {
+    padding: 20px;
+  }
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo"><img src="../image/logo skin.png" alt=""></div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Product</a>
+                <div class="dropdown-content">
+                    <a href="./Sun skin.html">Sun Skin</a>
+                    <a href="./face skin.html">Face Skin</a>
+                </div>
+            </li>
+            <a href="../page/store.html">Store</a>
+            <a href="../page/help.html">Helps</a>
+            <a href="/page/contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="explore-products">
+        <h2>Explore Products</h2>
+        <p class="subtitle">Discover our full skincare range tailored for every skin need.</p>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://i.pinimg.com/736x/56/45/bd/5645bd2c60ee4d35e232d34c1b0cc90a.jpg" alt="Sun Care">
+                <h3>Sun Care</h3>
+                <p>Protect your skin with lightweight, effective SPF solutions.</p>
+                <a href="/page/shop.html" class="btn">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <img src="https://i.pinimg.com/736x/d8/8a/b5/d88ab5137f1467a081dd0a8cad757c0d.jpg" alt="Serums">
+                <h3>Serums</h3>
+                <p>Targeted treatments to soothe, hydrate, and brighten your skin.</p>
+                <a href="/page/shop.html" class="btn">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <img src="https://i.pinimg.com/736x/41/a9/98/41a998d03fd304a8cc8df0b093f254f0.jpg" alt="Moisturizers">
+                <h3>Moisturizers</h3>
+                <p>Lock in hydration with nourishing creams and lotions.</p>
+                <a href="/page/shop.html" class="btn">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <img src="https://i.pinimg.com/736x/5e/18/8c/5e188c834408a2086a83387c69703127.jpg" alt="Masks">
+                <h3>Masks</h3>
+                <p>Give your skin a boost with brightening and soothing masks.</p>
+                <a href="/page/shop.html" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo-footer"><img src="./image/logo skin.png" alt=""></div>
+                <p>is a botanical skincare brand aiming to nourish, protect, and enhance your skin using natural, plant-based solutions. The logo suggests trust, health, and organic beauty.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>GROWSKIN</h3>
+                    <ul>
+                        <li><a href="#">Your trusted skincare</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="/index.html">Home Page</a></li>
+                        <li><a href="/page/face skin.html">Product Page</a></li>
+                        <li><a href="/page/store.html">Store Page</a></li>
+                        <li><a href="/page/help.html">Help Page</a></li>
+                        <li><a href="/page/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Sun Skin</a></li>
+                        <li><a href="#">Face Skin</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sunscreen</h3>
+                    <ul>
+                        <li><a href="#">Face Sunscreen</a></li>
+                        <li><a href="#">Body SunScreen</a></li>
+                        <li><a href="#">Kids & Sensitive Skin</a></li>
+                        <li><a href="#">After Sun Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Makeup Category</h3>
+                    <ul>
+                        <li><a href="#">Face Shop</a></li>
+                        <li><a href="#">Eyes Shop</a></li>
+                        <li><a href="#">Lips Shop</a></li>
+                        <li><a href="#">Tools & Accessories Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

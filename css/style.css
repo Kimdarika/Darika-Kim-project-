@@ -29,6 +29,7 @@ header nav a {
   border-radius: 4px;
   background: linear-gradient(to right, #fff, pink);
   font-size: 20px;
+  width: 100%;
 }
 header nav a:hover {
   color: rgb(224, 158, 36);

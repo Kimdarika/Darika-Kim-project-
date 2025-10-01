@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facial Treatments - Profile</title>
+  <link rel="stylesheet" href="/css/See Profile.css">
+  <link rel="stylesheet" href="/css/store.css">
+  <link rel="stylesheet" href="/sacc/components/components-home/_footer.scss">
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    .aside{
+    background-image: url("https://i.pinimg.com/736x/c8/c2/3b/c8c23bb9e807e05147d3fb292914041a.jpg");
+    text-align: center;
+    padding: 100px 20px;
+    }
+    .aside h1 {
+    font-size: 2.5rem;
+    color: #333;
+    }
+    .aside p {
+    font-size: 1.2rem;
+    color: #666;
+    }
+
+    /* About Section */
+    .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+    }
+    .about img {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .about-text {
+    max-width: 500px;
+    }
+    .about-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    }
+    .about-text p {
+    color: #555;
+    line-height: 1.6;
+    }
+
+    /* Benefits */
+    .benefits {
+    background: #fafafa;
+    padding: 40px 20px;
+    text-align: center;
+    }
+    .benefits h2 {
+    margin-bottom: 20px;
+    }
+    .benefits ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    }
+    .benefits li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #444;
+    }
+
+    /* Pricing */
+    .pricing {
+    padding: 40px 20px;
+    text-align: center;
+    }
+    .price-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    }
+    .card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    }
+    .card h3 {
+    margin-bottom: 10px;
+    }
+    .price {
+    font-size: 1.8rem;
+    color: #e91e63;
+    margin: 10px 0;
+    }
+    .card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    }
+    .card button:hover {
+    background: #c2185b;
+    }
+
+    /* Testimonials */
+    .testimonials {
+    background: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+    }
+    .testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    font-style: italic;
+    color: #555;
+    }
+    .testimonial span {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+    }
+
+    /* CTA */
+    .cta {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fce4ec;
+    }
+    .cta h2 {
+    font-size: 2rem;
+    }
+    .cta p {
+    margin: 10px 0 20px;
+    color: #444;
+    }
+    .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #e91e63;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    }
+    .btn:hover {
+    background: #c2185b;
+    }
+
+    /* Footer */
+    .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about img {
+        width: 100%;
+        max-width: 400px;
+    }
+    }
+
+</style>
+<body>
+    <header>
+        <div class="logo"><img src="../image/logo skin.png" alt=""></div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Product</a>
+                <div class="dropdown-content">
+                    <a href="/page/Sun skin.html">Sun Skin</a>
+                    <a href="./face skin.html">Face Skin</a>
+                </div>
+            </li>
+            <a href="./store.html">Store</a>
+            <a href="./help.html">Help</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Header Section -->
+        <aside class="aside">
+            <h1>Facial Treatments</h1>
+            <p>Deep cleansing • Hydration • Rejuvenation</p>
+        </aside>
+        <!-- About Treatment -->
+        <section class="about">
+            <img src="https://i.pinimg.com/736x/99/b4/f0/99b4f0d800c0aab83619b6e4cdc85bc1.jpg" alt="Facial Treatment">
+            <div class="about-text">
+            <h2>What is a Facial Treatment?</h2>
+            <p>
+                Our facial treatments are designed to deeply cleanse, hydrate, and
+                rejuvenate your skin. Each session helps remove impurities, restore
+                natural glow, and leave your skin feeling refreshed and radiant.
+            </p>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <h2>Key Benefits</h2>
+            <ul>
+            <li>✔ Deep cleansing & unclogged pores</li>
+            <li>✔ Boosts hydration & skin elasticity</li>
+            <li>✔ Reduces fine lines & dullness</li>
+            <li>✔ Promotes natural glowing skin</li>
+            </ul>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing">
+            <h2>Treatment Packages</h2>
+            <div class="price-cards">
+            <div class="card">
+                <h3>Single Session</h3>
+                <p class="price">$50</p>
+                <p>60 minutes deep cleansing facial</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <h3>3 Sessions Package</h3>
+                <p class="price">$135</p>
+                <p>Save 10% • Ideal for monthly treatments</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <h3>6 Sessions Package</h3>
+                <p class="price">$240</p>
+                <p>Save 20% • Perfect for glowing skin</p>
+                <button>Book Now</button>
+            </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+            <p>"My skin feels so soft and radiant after just one treatment. Highly recommend!"</p>
+            <span>- Sarah M.</span>
+            </div>
+            <div class="testimonial">
+            <p>"The hydration facial really helped with my dryness. I’ll be coming back for more."</p>
+            <span>- Emily R.</span>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Ready to Glow?</h2>
+            <p>Book your appointment today and give your skin the care it deserves.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo-footer"><img src="/image/logo skin.png" alt=""></div>
+                <p>is a botanical skincare brand aiming to nourish, protect, and enhance your skin using natural, plant-based solutions. The logo suggests trust, health, and organic beauty.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>GROWSKIN</h3>
+                    <ul>
+                        <li><a href="#">Your trusted skincare</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="/index.html">Home Page</a></li>
+                        <li><a href="/page/face skin.html">Product Page</a></li>
+                        <li><a href="/page/store.html">Store Page</a></li>
+                        <li><a href="/page/help.html">Help Page</a></li>
+                        <li><a href="/page/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Sun Skin</a></li>
+                        <li><a href="#">Face Skin</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sunscreen</h3>
+                    <ul>
+                        <li><a href="#">Face Sunscreen</a></li>
+                        <li><a href="#">Body SunScreen</a></li>
+                        <li><a href="#">Kids & Sensitive Skin</a></li>
+                        <li><a href="#">After Sun Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Makeup Category</h3>
+                    <ul>
+                        <li><a href="#">Face Shop</a></li>
+                        <li><a href="#">Eyes Shop</a></li>
+                        <li><a href="#">Lips Shop</a></li>
+                        <li><a href="#">Tools & Accessories Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
