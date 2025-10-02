@@ -43,18 +43,9 @@ header{
 }
 .shop-new {
   margin: 10px auto;
-  padding: 20px;
+  padding: 20px 0px;
   text-align: center;
 }
-
-.shop-new h2 {
-  font-size: 80px;
-  margin-bottom: 30px;
-  color: orange;
-  font-family: a;
-  
-}
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -166,6 +157,60 @@ header{
         margin-bottom: 50px;
     }
 }
+
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background-image: url("/image/shop-m.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 50px;
+    
+    
+}
+.hero-header{
+    padding-right: 500px;
+    margin-top: -45px;
+}
+.hero h1 {
+  font-size: 70px;
+  color: #030303;
+  font-family: a;
+  height: 40px;
+
+  
+}
+
+.hero p {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  padding:0px 200px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff80aa;
+  border: none;
+  padding: 10px 60px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top:15px;
+  transition: background-color 0.3s ease;
+  
+}
+.btn a{
+  text-decoration: none;
+  color:black;
+}
+
+.btn:hover {
+  background-color: #e06699;
+}
+
 </style>
 <body>
     <header>
@@ -175,6 +220,7 @@ header{
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Product</a>
                 <div class="dropdown-content">
+                    <a href="./product.html">Products</a>
                     <a href="./Sun skin.html">Sun Skin</a>
                     <a href="./face skin.html">Face Skin</a>
                 </div>
@@ -185,11 +231,14 @@ header{
         </nav>
     </header>
     <section class="shop-new">
-        <div class="header-paragraph">
-            <h2>New <span>Arrivals</span></h2>
-            <p>Our newest products are crafted with natural botanicals to keep your skin glowing, hydrated, and protected. Explore them before they’re gone!</p>
-        </div>
-        
+        <aside class="hero">
+            <div class="hero-header">
+                <h1 class="text">Skin Care <span>Products</span> </h1>
+                <h1 class="text">Secrets Of Beauty</h1>
+                <p>skin care product is a cosmetic formulation used to clean, protect, nourish, and enhance the health and appearance of the skin</p>
+                <button class="btn"><a href="https://t.me/Darika_Kim">Message</a></button>
+            </div>
+        </aside>
         <div class="product-grid">
 
             <!-- Product Card -->
