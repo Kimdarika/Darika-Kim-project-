@@ -1,0 +1,576 @@
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Smith - Product Designer</title>
+    <link rel="stylesheet" href="/css/About Me.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Replace with specific Google Font */
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.primary-btn {
+    background-color:orange; /* Yellow/Orange accent */
+    color: #333;
+    border: 2px solid orange;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+/* 1. Header & Navigation */
+.main-header {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #000;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 0 15px;
+    transition: color 0.3s;
+}
+
+.contact-btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* 2. Hero Section */
+.hero-section {
+    padding: 80px 0 0;
+    position: relative;
+    overflow: hidden; /* To handle absolute positioning of elements */
+}
+
+.hero-section .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+    margin: 15px 0 25px;
+}
+
+.hero-content h1 span {
+    color: rgb(214, 74, 97); /* Accent color for name */
+}
+
+.hero-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Or specific shape for the main image */
+}
+
+.services-section {
+    padding: 80px 0;
+}
+
+.services-section .container {
+    display: grid;
+    grid-template-areas:
+        "title button"
+        "cards cards";
+    gap: 30px;
+}
+
+.services-section h2 {
+    grid-area: title;
+    font-size: 2em;
+}
+
+.services-section h2 span {
+    color: orange;
+}
+
+.view-all-btn {
+    grid-area: button;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.service-cards-grid {
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.service-card {
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    border-top: 4px solid orange; /* Accent line */
+}
+
+/* 4. About Me Section (Dark Green Background) */
+.about-section {
+    background-color: rgb(0, 0, 0); /* Dark green color from the image */
+    color: white;
+    padding: 100px 0;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+   gap: 30px;
+}
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.section-subtitle {
+    font-size: 0.9em;
+    color: rgb(227, 88, 111); /* Lighter text for subtitle */
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-content h2 span {
+    color: rgb(214, 80, 103);
+}
+
+.stats-grid {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.stats-grid div h3 {
+    font-size: 2em;
+    color: rgb(208, 67, 91);
+}
+
+.stats-grid div p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Adjust primary button for dark background */
+.about-section .primary-btn {
+    background-color: orange(58, 5, 14);
+    color: #1a4f31;
+    border: none;
+}
+
+
+
+
+
+/* Variables for easy color management */
+:root {
+    --color-primary: rgb(230, 71, 97); /* Yellow/Orange Accent */
+    --color-secondary: orange; /* Dark Green */
+    --color-text-dark: #333;
+    --color-background-light: #f7f7f7;
+    --color-white: #ffffff;
+}
+
+/* General Reset and Container */
+.services-section {
+    padding: 80px 0;
+    font-family: Arial, sans-serif; /* Use your desired font here */
+}
+
+.services-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Header Styling */
+
+.section-subtitle {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--color-primary);
+    /* Align with the title below */
+    position: absolute;
+    transform: translateY(-20px);
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: var(--color-text-dark);
+}
+
+.section-title .accent {
+    font-weight: normal; /* To make "I Provide" less bold or a different shade if needed */
+}
+
+/* View All Services Button Styling */
+.view-all-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 10px 15px 10px ;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: bold;
+    /* Wrapper for the full button effect */
+    position: relative;
+    overflow: hidden;
+}
+
+.view-all-btn span {
+    padding-right: 10px;
+    transition: transform 0.3s;
+}
+
+.view-all-btn .arrow-icon {
+    background-color: var(--color-primary);
+    color: var(--color-text-dark);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-right: -5px; /* Pull it slightly into the button */
+}
+
+/* Service Cards Grid Layout */
+.service-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Individual Service Card Styling */
+.service-card {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Light shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #eee;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Box Styling */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #fcecd7; /* Light background for the icon area */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box img {
+    max-width: 70%;
+    max-height: 70%;
+    /* Note: In a real project, you'd use SVG/Icon Fonts for better quality */
+}
+
+.service-card h3 {
+    font-size: 1.4em;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    min-height: 50px; /* Ensure cards have similar height */
+}
+
+/* Learn More Link Styling */
+.learn-more-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.learn-more-link:hover {
+    color: var(--color-secondary);
+}
+</style>
+<body>
+
+    <header>
+        <div class="logo"><img src="../image/logo skin.png" alt=""></div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Product</a>
+                <div class="dropdown-content">
+                    <a href="./product.html">Products</a>
+                    <a href="./Sun skin.html">Sun Skin</a>
+                    <a href="./face skin.html">Face Skin</a>
+                </div>
+            </li>
+            <a href="/page/store.html">Store</a>
+            <a href="#">About Me</a>
+            <a href="./help.html">Help</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <p>Hello There!</p>
+                <h1>I'm <span>Darika Kim</span>, Product Designer Based in PNC.</h1>
+                <p>I'm an experienced Product Designer with 10+ years in the field, collaborating with various companies and startups.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn primary-btn">View My Portfolio</a>
+                    <a href="#" class="btn secondary-btn">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/image/daka.png" alt="Darika Kim">
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-subtitle">– Services</p>
+                <div class="services">
+                    <h2 class="section-title">Services <span class="accent">I Provide</span></h2>
+                    <div>
+                        <a href="#" class="view-all-btn">
+                            <span>View All Services</span>
+                            <span class="arrow-icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="service-cards-grid">
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <img src="https://cdn-icons-png.flaticon.com/512/17109/17109606.png" alt="UI/UX Design Icon">
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
+                    <a href="#" class="learn-more-link">Learn more →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2833/2833661.png" alt="Application Design Icon">
+                    </div>
+                    <h3>Application Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
+                    <a href="#" class="learn-more-link">Learn more →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5339/5339159.png" alt="Website Design Icon">
+                    </div>
+                    <h3>Website Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ...</p>
+                    <a href="#" class="learn-more-link">Learn more →</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="about-section dark-bg">
+        <div class="container">
+            <div class="about-image">
+                 <img src="/image/web.png" alt="Darika Kim with design elements">
+            </div>
+            <div class="about-content">
+                <p class="section-subtitle">– ABOUT ME</p>
+                <h2>Who is <span>Darika Kim</span>?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="stats-grid">
+                    <div>
+                        <h3>600+</h3>
+                        <p>Project Completed</p>
+                    </div>
+                    <div>
+                        <h3>50+</h3>
+                        <p>Industry Covered</p>
+                    </div>
+                    <div>
+                        <h3>10+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <a href="#" class="btn primary-btn">Contact Me →</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo-footer"><img src="/image/logo skin.png" alt=""></div>
+                <p>is a botanical skincare brand aiming to nourish, protect, and enhance your skin using natural, plant-based solutions. The logo suggests trust, health, and organic beauty.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>GROWSKIN</h3>
+                    <ul>
+                        <li><a href="#">Your trusted skincare</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="#">Home Page</a></li>
+                        <li><a href="#">Product Page</a></li>
+                        <li><a href="#">Store Page</a></li>
+                        <li><a href="#">Help Page</a></li>
+                        <li><a href="#">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Sun Skin</a></li>
+                        <li><a href="#">Face Skin</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sunscreen</h3>
+                    <ul>
+                        <li><a href="#">Face Sunscreen</a></li>
+                        <li><a href="#">Body SunScreen</a></li>
+                        <li><a href="#">Kids & Sensitive Skin</a></li>
+                        <li><a href="#">After Sun Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Makeup Category</h3>
+                    <ul>
+                        <li><a href="#">Face Shop</a></li>
+                        <li><a href="#">Eyes Shop</a></li>
+                        <li><a href="#">Lips Shop</a></li>
+                        <li><a href="#">Tools & Accessories Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
