@@ -192,7 +192,6 @@ main .container .service-card {
 main .container .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 80px 0px 80px;
 }
 main .card-3 {
   display: flex;
@@ -450,12 +449,7 @@ article .features .feature-card p {
 }
 
 aside {
-  background-image: url("/image/9.png");
-  font-family: sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: rgba(243, 235, 237, 0.147);
 }
 aside .blog-section {
   background-color: rgba(255, 192, 203, 0.379);
@@ -471,6 +465,7 @@ aside .blog-header {
 aside .blog-header h2 {
   font-size: 30px;
   margin: 0;
+  color: #ff6d3f;
 }
 aside .blog-header p {
   flex: 1 1 100%;
@@ -502,7 +497,6 @@ aside .blog-card {
 }
 aside .blog-card:hover {
   transform: translateY(-5px);
-  border-radius: 80px 0px;
 }
 aside .blog-card img {
   width: 100%;
@@ -550,13 +544,17 @@ nav .testimonials {
 }
 nav .testimonials h1 {
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: serif;
   margin-bottom: 30px;
+  font-weight: 600;
+}
+nav .testimonials span {
+  color: orange;
 }
 nav .testimonials p {
   font-family: sans-serif;
   font-size: 20px;
-  margin: 96px;
+  margin: 20px 96px 30px;
 }
 nav .testimonials .testimonial-grid {
   display: flex;
@@ -604,18 +602,13 @@ nav .testimonials .testimonial-grid .stars {
 }
 
 form {
-  background-image: url("/image/6.jpg");
-  font-family: sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.266);
   /* Left - Login Section */
   /* Right - Testimonial Section */
 }
 form .container {
   display: flex;
-  width: 900px;
+  width: 9000px;
   height: 550px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -630,6 +623,9 @@ form .login-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+form .container:hover {
+  border: solid 0.1px orange;
 }
 form .login-section h2 {
   font-size: 28px;
@@ -689,7 +685,7 @@ form .signup-text a {
 }
 form .testimonial-section {
   flex: 1;
-  background: url("https://i.pinimg.com/736x/e4/63/da/e463da1ecbc3c29021dd6c3d68e636f2.jpg") center/cover no-repeat;
+  background: url("/image/daka.png") center/cover no-repeat;
   position: relative;
 }
 form .testimonial-overlay {

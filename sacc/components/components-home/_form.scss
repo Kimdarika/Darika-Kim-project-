@@ -1,13 +1,14 @@
 form{
-    background-image: url("/image/6.jpg");
-    font-family: sans-serif;
-    background-size: cover;      
-    background-position: center;    
-    background-attachment: fixed;    
-    background-repeat: no-repeat;
+    // background-image: url("/image/6.jpg");
+    // font-family: sans-serif;
+    // background-size: cover;      
+    // background-position: center;    
+    // background-attachment: fixed;    
+    // background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.266);
     .container {
     display: flex;
-    width: 900px;
+    width: 9000px;
     height: 550px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -24,6 +25,10 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    }
+    .container:hover{
+        border: solid 0.1px orange;
+
     }
 
     .login-section h2 {
@@ -96,7 +101,7 @@ form{
     /* Right - Testimonial Section */
     .testimonial-section {
     flex: 1;
-    background: url('https://i.pinimg.com/736x/e4/63/da/e463da1ecbc3c29021dd6c3d68e636f2.jpg') center/cover no-repeat;
+    background: url("/image/daka.png") center/cover no-repeat;
     position: relative;
     }
 

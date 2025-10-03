@@ -40,7 +40,7 @@
     .login-section{
         margin: 0px 200px 0px 0px;
     }
-     .footer-container{
+     .footer-container-1{
         display: flex;
         margin: 0px 0px;
         margin-left: -100px;
@@ -49,7 +49,164 @@
         width: 380px;
     } 
 }
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(.19,.1,.22,1);
+}
 
+.container-1 {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin: 25px auto 50px;
+  max-width: 1300px;
+  font-family: sans-serif;
+  
+}
+@media (min-width: 600px) {
+  .container-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .container-1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card-1 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 40px 20px;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 6px 11px 3px #00000033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .card-1 {
+    height: 350px;
+  }
+}
+
+.card-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+}
+.card-1:nth-child(1)::before {
+  background-image: url("https://i.pinimg.com/736x/d7/ee/67/d7ee67eaaed333a2de99e8fd5ea4949a.jpg");
+}
+.card-1:nth-child(2)::before {
+  background-image: url("https://i.pinimg.com/736x/b6/d2/0f/b6d20f710da5dad677f41e6b0c20fb5a.jpg");
+}
+.card-1:nth-child(3)::before {
+  background-image: url("https://i.pinimg.com/736x/2f/9f/1c/2f9f1c7ea494967a015161edb8b85c34.jpg");
+}
+.card-1:nth-child(4)::before {
+  background-image: url("https://i.pinimg.com/1200x/c1/7b/dc/c17bdccd11057814b3313ea826004d1f.jpg");
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.description {
+  font-family: serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #66666666;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+.card-1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.80) 100%
+  );
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+
+/* Hover */
+@media (hover: hover) and (min-width: 600px) {
+  .card-1::after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+
+  .card-1:hover:after,
+  .card-1:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card-1:hover .content, 
+  .card-1:focus-within .content {
+    transform: translateY(0);
+  }
+
+  .card-1:hover::before,
+  .card-1:focus-within::before {
+    transform: translateY(-5%);
+  }
+}
 </style>
 <body>
     <header>
@@ -121,41 +278,33 @@
                     </div>
                 </div>
             </div>
-            <div class="card-3">
-                <div class="card-and">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="https://i.pinimg.com/736x/97/85/07/9785073ff422b2de0eb3f5c73f945619.jpg" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Facial Treatments</h4>
-                            <p class="card-text">Deep cleansing, hydration, and rejuvenation to keep your skin glowing.</p>
-                            <a href="./page/See-Profile.html" class="btn btn-primary">See Profile</a>
-                        </div>
+            <div class="container-1">
+                <div class="card-1">
+                    <div class="content">
+                        <h2 class="title">Facial Treatments</h2>
+                        <p class="description">Deep cleansing, hydration, and rejuvenation to keep your skin glowing.</p>
+                         <a href="/page/shop.html" class="btn btn-primary">See Profile</a>
                     </div>
-                    <div>
-                        <div class="card">
-                            <img class="card-img-top"
-                                src="https://i.pinimg.com/1200x/f0/20/8f/f0208f2c8f48a3a4bd04cf22e22ac31c.jpg"
-                                alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Security & Fraud</h4>
-                                <p class="card-text">Monitor transactions to prevent fraud and protect customer accounts.</p>
-                                <a href="./page/See-Profile.html" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="card-1">
+                    <div class="content">
+                        <h2 class="title">Security & Fraud</h2>
+                        <p class="description">Plan your next beach trip with these fabulous destinations</p>
+                         <a href="/page/shop.html" class="btn btn-primary">See Profile</a>
                     </div>
-                    <div>
-                        <div class="card">
-                            <img class="card-img-top"
-                                src="https://i.pinimg.com/1200x/24/51/27/2451277bfcba967b2af87eeefa438d19.jpg"
-                                alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">Acne & Blemish Care</h4>
-                                <p class="card-text">Targeted treatments to reduce breakouts and improve skin clarity.</p>
-                                <a href="./page/See-Profile.html" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="card-1">
+                    <div class="content">
+                        <h2 class="title">Acne & Blemish Care</h2>
+                        <p class="description">Targeted treatments to reduce breakouts and improve skin clarity.</p>
+                         <a href="/page/shop.html" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="content">
+                        <h2 class="title">Type of Skin care</h2>
+                        <p class="description">Monitor transactions to prevent fraud and protect customer accounts.</p>
+                        <a href="/page/shop.html" class="btn btn-primary">See Profile</a>
                     </div>
                 </div>
             </div>
@@ -281,7 +430,7 @@
     </aside>
     <nav>
         <div class="testimonials">
-            <h1 > Customers's Comment</h1>
+            <h1 > Customers's <span>Comment</span> </h1>
             <p class="choose"> Real experiences, real results. See why thousands trust our skincare for glowing, nourished, and protected skin. From soft, hydrated skin to glowing complexions, our customers share the results that make our skincare routines so effective</p>
             <div class="testimonial-grid"> 
                 <!-- Testimonial 1 -->
