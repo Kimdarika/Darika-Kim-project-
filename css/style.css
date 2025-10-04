@@ -56,6 +56,9 @@ header .dropbtn {
   border-radius: 4px;
   transition: background-color 0.2s;
 }
+header nav li .dropbtn {
+  padding: 10px 0px;
+}
 header .dropdown-content {
   display: none;
   position: absolute;
@@ -791,6 +794,7 @@ form .stars {
 @media (max-width: 768px) {
   .footer .footer-container {
     flex-direction: column;
+    margin-left: -100px;
   }
   .footer .footer-links {
     flex-direction: column;

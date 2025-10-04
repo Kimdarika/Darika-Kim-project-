@@ -97,6 +97,7 @@
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;
+      margin-left: -100px;
     }
 
     .footer-links {

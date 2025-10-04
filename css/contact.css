@@ -29,9 +29,10 @@ header nav a {
   border-radius: 4px;
   background: linear-gradient(to right, #fff, orange);
   font-size: 20px;
+  width: 100%;
 }
 header nav a:hover {
-  color: wheat;
+  color: rgb(255, 255, 255);
 }
 header .btn-signup {
   background-color: #ffc107;
@@ -54,6 +55,9 @@ header .dropbtn {
   background-color: #f4f4f4;
   border-radius: 4px;
   transition: background-color 0.2s;
+}
+header nav li .dropbtn {
+  padding: 10px 0px;
 }
 header .dropdown-content {
   display: none;
@@ -79,9 +83,9 @@ header .dropdown:hover .dropdown-content {
 header .dropdown:hover .dropbtn {
   background-color: #e0e0e0;
 }
-@media (max-width: 900px) and (min-width: 429px) {
+@media (max-width: 800px) and (min-width: 429px) {
   header .logo img {
-    width: 150px;
+    width: 200px;
     padding: 30px 0px 20px;
   }
   header nav a {
@@ -90,7 +94,7 @@ header .dropdown:hover .dropbtn {
     padding: 14px 4px;
     color: #333;
     border-radius: 4px;
-    background: linear-gradient(to right, #fff, pink);
+    background: linear-gradient(to right, #fff, orange);
     font-size: 16px;
   }
   header nav a:hover {
