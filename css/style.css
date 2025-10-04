@@ -27,12 +27,12 @@ header nav a {
   padding: 14px 20px;
   color: #333;
   border-radius: 4px;
-  background: linear-gradient(to right, #fff, pink);
+  background: linear-gradient(to right, #fff, orange);
   font-size: 20px;
   width: 100%;
 }
 header nav a:hover {
-  color: rgb(224, 158, 36);
+  color: rgb(255, 255, 255);
 }
 header .btn-signup {
   background-color: #ffc107;
@@ -91,7 +91,7 @@ header .dropdown:hover .dropbtn {
     padding: 14px 4px;
     color: #333;
     border-radius: 4px;
-    background: linear-gradient(to right, #fff, pink);
+    background: linear-gradient(to right, #fff, orange);
     font-size: 16px;
   }
   header nav a:hover {
@@ -712,7 +712,7 @@ form .stars {
 /* Footer */
 .footer {
   padding: 10px 20px 0;
-  background-color: pink;
+  background-color: rgb(0, 0, 0);
 }
 .footer .footer-container {
   display: flex;
@@ -732,6 +732,7 @@ form .stars {
 .footer .footer-container .footer-about p {
   font-size: 14px;
   line-height: 1.6;
+  color: white;
 }
 .footer .footer-container .footer-about .social a {
   display: inline-block;
@@ -749,8 +750,9 @@ form .stars {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
+  color: orange;
 }
 .footer .footer-container .footer-links ul {
   list-style: none;
@@ -766,7 +768,7 @@ form .stars {
   font-size: 14px;
 }
 .footer .footer-container .footer-links ul li a:hover {
-  color: #fff;
+  color: orange;
 }
 .footer .footer-bottom {
   display: flex;

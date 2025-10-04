@@ -10,7 +10,7 @@ header {
      .logo{
         font-size: 3rem;
         font-weight: 700;
-        color: #ffc107;
+        color: white;
         img{
           width: 300px;
         }
@@ -39,7 +39,7 @@ header {
     padding: 10px 15px;
     color: #333;
     text-decoration: none;
-    background: linear-gradient(to right, #fff,pink);
+    background: linear-gradient(to right, #fff, orange);
     border-radius: 4px;
     transition: background-color 0.2s;
   }

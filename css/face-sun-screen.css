@@ -1,25 +1,25 @@
-header {
-  background-image: url("/image/1.jpg");
+main {
+  background-image: url("/image/5.jpg");
   font-family: sans-serif;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-header .fa-card {
+main .fa-card {
   margin: 0px 60px;
   padding: 30px 0px;
 }
-header .card-face {
+main .card-face {
   display: flex;
   gap: 25px;
 }
-header .card-face-15 {
+main .card-face-15 {
   display: flex;
   gap: 25px;
   padding: 30px 60px;
 }
-header .product-card {
+main .product-card {
   width: 260px;
   background: #fff;
   border-radius: 12px;
@@ -29,22 +29,22 @@ header .product-card {
   position: relative;
   font-family: "Poppins", sans-serif;
 }
-header .product-card:hover {
+main .product-card:hover {
   transform: translateY(-5px);
 }
-header .product-image {
+main .product-image {
   position: relative;
   width: 100%;
   height: 220px;
   overflow: hidden;
 }
-header .product-image img {
+main .product-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-header .badge {
+main .badge {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -54,7 +54,7 @@ header .badge {
   padding: 5px 10px;
   border-radius: 20px;
 }
-header .wishlist {
+main .wishlist {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -62,45 +62,45 @@ header .wishlist {
   color: #c2185b;
   cursor: pointer;
 }
-header .product-info {
+main .product-info {
   padding: 15px;
 }
-header .product-name {
+main .product-name {
   font-size: 16px;
   font-weight: 600;
   color: #333;
   margin-bottom: 5px;
 }
-header .price {
+main .price {
   font-size: 16px;
   color: orange;
   font-weight: bold;
   margin-bottom: 5px;
 }
-header del {
+main del {
   color: gray;
   padding-left: 20px;
 }
-header .skin-type {
+main .skin-type {
   font-size: 13px;
   color: #c2185b;
   margin-bottom: 5px;
 }
-header .ingredients {
+main .ingredients {
   font-size: 12px;
   color: #777;
   margin-bottom: 10px;
 }
-header .rating {
+main .rating {
   font-size: 14px;
   color: #555;
   margin-bottom: 15px;
 }
-header .rating span {
+main .rating span {
   font-size: 12px;
   color: #888;
 }
-header .btn {
+main .btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #c2185b;
@@ -111,14 +111,14 @@ header .btn {
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
-header .btn:hover {
+main .btn:hover {
   background-color: #a3154b;
 }
-header .carousel-container {
+main .carousel-container {
   margin: 0 auto;
   background-color: rgba(0, 0, 255, 0.268);
 }
-header .carousel-container .carousel {
+main .carousel-container .carousel {
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -128,15 +128,15 @@ header .carousel-container .carousel {
   margin: 0px 60px;
   padding: 40px;
 }
-header .carousel-container .carousel::-webkit-scrollbar {
+main .carousel-container .carousel::-webkit-scrollbar {
   height: 8px;
 }
-header .carousel-container .carousel::-webkit-scrollbar-thumb {
+main .carousel-container .carousel::-webkit-scrollbar-thumb {
   background: #ffffff;
   border-radius: 4px;
   display: none;
 }
-header .carousel-container .carousel .product {
+main .carousel-container .carousel .product {
   flex: 0 0 auto;
   width: 200px;
   border: 1px solid #ddd;
@@ -147,11 +147,11 @@ header .carousel-container .carousel .product {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   scroll-snap-align: start;
 }
-header .carousel-container .carousel .product img {
+main .carousel-container .carousel .product img {
   max-width: 100%;
   border-radius: 8px;
 }
-header .carousel-container .carousel .product .product-title {
+main .carousel-container .carousel .product .product-title {
   font-size: 14px;
   margin: 10px 0 5px;
   color: #0366d6;
@@ -159,20 +159,20 @@ header .carousel-container .carousel .product .product-title {
   text-decoration: none;
   display: block;
 }
-header .carousel-container .carousel .product .product-title:hover {
+main .carousel-container .carousel .product .product-title:hover {
   text-decoration: underline;
 }
-header .carousel-container .carousel .product .rating {
+main .carousel-container .carousel .product .rating {
   color: #f5a623;
   font-size: 13px;
   margin-bottom: 5px;
 }
-header .carousel-container .carousel .product .price {
+main .carousel-container .carousel .product .price {
   font-weight: bold;
   font-size: 16px;
   color: #222;
 }
-header .carousel-container .carousel .product .prime {
+main .carousel-container .carousel .product .prime {
   font-size: 12px;
   color: #0073bb;
   margin-top: 5px;

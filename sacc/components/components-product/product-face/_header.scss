@@ -20,7 +20,7 @@ header {
       @include header-page2;
       font-size: 20px;
       &:hover{
-        color: orange;
+        color:white;
       }
     }
     .btn-signup {
@@ -92,7 +92,7 @@ header {
       padding:14px 4px ;
       color: #333;
       border-radius: 4px;
-      background: linear-gradient(to right, #fff, pink);
+      background: linear-gradient(to right, #fff, orange);
       font-size: 16px;
       &:hover{
         color: rgb(224, 158, 36);

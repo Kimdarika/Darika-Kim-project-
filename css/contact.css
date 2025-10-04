@@ -27,11 +27,11 @@ header nav a {
   padding: 14px 20px;
   color: #333;
   border-radius: 4px;
-  background: linear-gradient(to right, #fff, pink);
+  background: linear-gradient(to right, #fff, orange);
   font-size: 20px;
 }
 header nav a:hover {
-  color: rgb(224, 158, 36);
+  color: wheat;
 }
 header .btn-signup {
   background-color: #ffc107;

@@ -1,7 +1,7 @@
 /* Footer */
 .footer {
   padding: 10px 20px 0;
-  background-color:pink;
+  background-color:rgb(0, 0, 0);
 
   .footer-container {
     display: flex;
@@ -23,6 +23,7 @@
       p {
         font-size: 14px;
         line-height: 1.6;
+        color: white;
       }
 
       .social {
@@ -45,8 +46,9 @@
         font-size: 14px;
         text-transform: uppercase;
         margin-bottom: 10px;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid #ffffff;
         padding-bottom: 5px;
+        color: orange;
       }
 
       ul {
@@ -63,7 +65,7 @@
             font-size: 14px;
 
             &:hover {
-              color: #fff;
+              color: orange;
             }
           }
         }
