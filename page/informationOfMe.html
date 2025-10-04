@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<style>
+    /* --- Global Styles & Typography --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Primary link color (blue) */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* --- Header & Intro --- */
+.portfolio-header {
+    text-align: center;
+    padding: 100px 0px ;
+    background-image: url("/image/pnc.png");
+    border-bottom: 2px solid #e0e0e0;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width:100%;
+}
+
+
+/* --- Call-to-Action Buttons --- */
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.cta-button.secondary {
+    background-color: #333;
+}
+
+.cta-button.secondary:hover {
+    background-color: #1a1a1a;
+}
+
+/* --- Project Grid --- */
+.portfolio-grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.portfolio-grid h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+/* Flexbox/Grid for Project Cards */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-placeholder-1 {
+    height: 180px;
+    background-image: url("/image/mak.png"); /* Light gray box for image area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color:orange;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+
+    background-size: cover;
+    background-position: center;
+    height: 26vh;
+    width:100%;
+
+}
+.project-image-placeholder-2 {
+    height: 180px;
+    background-image: url("/image/web.png");/* Light gray box for image area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+    
+    background-size: cover;
+    background-position: center;
+    height: 26vh;
+    width:100%;
+
+}
+.project-image-placeholder-3 {
+    height: 180px;
+    background-image: url("/image/night.png"); /* Light gray box for image area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+    
+    background-size: cover;
+    background-position: center;
+    height: 26vh;
+    width:100%;
+
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card .description,
+.project-card .role {
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.project-card .view-case-study {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 40px;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    margin: 0 10px;
+}
+
+/* --- Footer --- */
+.features-1{
+    margin-top: 20px;
+    font-family: serif;
+    font-size: 60px;
+    text-align: center;
+}
+.features-4{
+    margin-top: 20px;
+    font-family: serif;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+span{
+    color: orange;
+}
+.features-2{
+    padding:0px  300px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.features-3{
+    padding:0px  300px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.header-text{
+    background-color: rgba(0, 0, 0, 0.379);
+    padding: 50px 0px 50px ;
+    height: 64vh;
+    margin-top:-100px;
+}
+header{
+  width:87%;
+  background-color: #f3bebe54;
+  padding: 0px 99px;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo"><img src="../image/logo skin.png" alt=""></div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Product</a>
+                <div class="dropdown-content">
+                    <a href="./product.html">Products</a>
+                    <a href="/page/Sun skin.html">Sun Skin</a>
+                    <a href="/page/face skin.html">Face Skin</a>
+                </div>
+            </li>
+            <a href="./store.html">Store</a>
+            <a href="/page/About Me.html">About Me</a>
+            <a href="./help.html">Help</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <aside class="portfolio-header">
+        <div class="header-text">
+            <h1 class="features-4">👋 Hi, I'm <span>Darika Kim</span>.</h1>
+            <p class="features-3">Launched in 2005 in Phnom Penh, Passerelles Numériques Cambodia (PNC) offers a 2-year  IT training program in IT, based on a holistic approach including technical skills and professional development (or soft skills). While at PNC, the basic needs of our students (housing, food, medical care) are covered.</p>
+            <a href="https://www.passerellesnumeriques.org/what-we-do/cambodia/" class="cta-button">View My Latest Work</a>
+        </div>
+    </aside>
+    <h2 class="features-1">Featured <span> Projects</span></h2>
+    <p class="features-2">“The Featured Projects section  <span>highlights</span> a selection of my <span>most impactful</span> and <span>well-crafted works</span>, <span>showcasing </span>not only technical expertise in modern <span>frontend</span> technologies but also <span>creativity</span> in design, problem-solving, and user <span> experience</span>, giving you a clear view of the <span>quality</span> and style of work I deliver.”</p>
+    <main id="projects" class="portfolio-grid">
+        <div class="project-card">
+            <div class="project-image-placeholder-1" >Project 1 Image</div>
+            <h3>SaaS Platform Redesign</h3>
+            <p class="description">**Challenge:** Improved user retention by streamlining the onboarding process.</p>
+            <p class="role">**Role:** Lead UX Designer | **Results:** 🚀 25% increase in sign-up conversion.</p>
+            <a href="https://www.w3schools.com/" class="view-case-study">View Case Study →</a>
+        </div>
+        <div class="project-card">
+            <div class="project-image-placeholder-2">Project 2 Image</div>
+            <h3>Local Coffee Shop Branding</h3>
+            <p class="description">**Challenge:** Developed a cohesive visual identity for a new urban brand.</p>
+            <p class="role">**Skills:** Logo Design, Typography, Print Material</p>
+            <a href="https://www.passerellesnumeriques.org/what-we-do/cambodia/" class="view-case-study">View Project Details →</a>
+        </div>
+        <div class="project-card">
+            <div class="project-image-placeholder-3">Project 3 Image</div>
+            <h3>Interactive Data Visualization</h3>
+            <p class="description">**Challenge:** Built a real-time data dashboard using React and D3.js.</p>
+            <p class="role">**Role:** Front-End Developer | **Code:** Clean, responsive, and accessible.</p>
+            <a href="https://www.bytebase.com/view-live-demo/" class="view-case-study">View Live Demo →</a>
+        </div>
+    </main>
+    <section class="contact-section">
+        <h2>Ready to collaborate?</h2>
+        <a href="mailto:your_email@example.com" class="cta-button secondary">Get in Touch</a>
+        <p class="contact-info">
+            Connect: 
+            <a href="https://www.instagram.com/">Instagram</a> | 
+            <a href="https://github.com/Kimdarika">GitHub</a> | 
+            <a href="https://t.me/Darika_Kim">Telagram</a>
+        </p>
+    </section>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo-footer"><img src="../image/logo skin.png" alt=""></div>
+                <p>is a botanical skincare brand aiming to nourish, protect, and enhance your skin using natural, plant-based solutions. The logo suggests trust, health, and organic beauty.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>GROWSKIN</h3>
+                    <ul>
+                        <li><a href="#">Your trusted skincare</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="/index.html">Home Page</a></li>
+                        <li><a href="/page/face skin.html">Product Page</a></li>
+                        <li><a href="/page/store.html">Store Page</a></li>
+                        <li><a href="/page/help.html">Help Page</a></li>
+                        <li><a href="/page/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Sun Skin</a></li>
+                        <li><a href="#">Face Skin</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sunscreen</h3>
+                    <ul>
+                        <li><a href="#">Face Sunscreen</a></li>
+                        <li><a href="#">Body SunScreen</a></li>
+                        <li><a href="#">Kids & Sensitive Skin</a></li>
+                        <li><a href="#">After Sun Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Makeup Category</h3>
+                    <ul>
+                        <li><a href="#">Face Shop</a></li>
+                        <li><a href="#">Eyes Shop</a></li>
+                        <li><a href="#">Lips Shop</a></li>
+                        <li><a href="#">Tools & Accessories Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
