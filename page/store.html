@@ -14,7 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <style>
+
+     .store-card{
+            width: 400px;
+    }
      @media (max-width:428px){
+        header{
+            display: none;
+        }
         .footer-container{
             display: flex;
             margin: 0px 0px;
@@ -43,27 +50,68 @@
             margin-left: 15px;
             overflow-x: hidden;
         }
+        .shoping{
+            margin-left: -250px;
+        }
+        .store-grid{
+            flex-wrap: wrap;
+            width: 200px;
+            padding-right: 20px  ;    
+        }
+        .store-card{
+            margin-left: -200px;
+            width: 350px;
+        }
+        .store-list{
+            margin-left: 210px;
+        }
+        .subheading{
+            display: flex;
+            margin-left: -150px;
+        }
+        .search-filters{
+            margin-left: -2000px;
+        }
+        main{
+            display: none;
+        }
+    }
+    @media (max-width:900px) and (min-width:700px){
+        body{
+            overflow-x: hidden;
+        }
+        .store-card{
+            width: 370px;
+        }
+        .header-a{
+            display: flex;
+            background-color: aqua;
+            justify-content: center;
+        }
+        header{
+            width:108% ;
+        }
 
     }
 </style>
 <body>
     <header>
-        <div class="logo"><img src="../image/logo skin.png" alt=""></div>
-        <nav>
-            <a href="../index.html">Home</a>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Product</a>
-                <div class="dropdown-content">
-                    <a href="./product.html">Products</a>
-                    <a href="./Sun skin.html">Sun Skin</a>
-                    <a href="./face skin.html">Face Skin</a>
-                </div>
-            </li>
-            <a href="#">Store</a>
-            <a href="/page/About Me.html">About Me</a>
-            <a href="./help.html">Help</a>
-            <a href="./contact.html">Contact</a>
-        </nav>
+            <div class="logo"><img src="../image/logo skin.png" alt=""></div>
+            <nav>
+                <a href="../index.html">Home</a>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Product</a>
+                    <div class="dropdown-content">
+                        <a href="./product.html">Products</a>
+                        <a href="./Sun skin.html">Sun Skin</a>
+                        <a href="./face skin.html">Face Skin</a>
+                    </div>
+                </li>
+                <a href="#">Store</a>
+                <a href="/page/About Me.html">About Me</a>
+                <a href="./help.html">Help</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
     </header>
     <main>
         <div class="main-all">
@@ -80,8 +128,10 @@
     </main>
     <nav>
         <div class="online-store">
-            <h2>Shop Online</h2>
-            <p>Shop from anywhere, anytime. Browse our official online stores for the latest products and exclusive deals.</p>
+            <div class="shoping">
+                <h2>Shop Online</h2>
+                <p>Shop from anywhere, anytime. Browse our official online stores for the latest products and exclusive deals.</p>
+            </div>
             <div class="store-grid">
                 <div class="store-card">
                     <img src="https://i.pinimg.com/1200x/2d/a2/15/2da21580960182c4af856b2d3fa40f21.jpg" alt="Shopify Store">
@@ -90,6 +140,21 @@
                 </div>
                 <div class="store-card">
                     <img src="https://i.pinimg.com/736x/d8/f1/08/d8f108b8fa97426d893a8abdbd40dfe6.jpg" alt="Amazon Store">
+                    <h3>Amazon Store</h3>
+                    <a href="#" class="btn">Visit Amazon</a>
+                </div>
+                <div class="store-card">
+                    <img src="https://i.pinimg.com/1200x/58/a3/24/58a324fcbed985e29c20f4072d1e2b01.jpg" alt="Amazon Store">
+                    <h3>Amazon Store</h3>
+                    <a href="#" class="btn">Visit Amazon</a>
+                </div>
+                <div class="store-card">
+                    <img src="https://i.pinimg.com/1200x/64/93/e4/6493e48c2e7b77f3d8e894a15068116e.jpg" alt="Amazon Store">
+                    <h3>Amazon Store</h3>
+                    <a href="#" class="btn">Visit Amazon</a>
+                </div>
+                <div class="store-card">
+                    <img src="https://i.pinimg.com/736x/12/94/20/129420194bd582ef11f612b5dedc9d9d.jpg" alt="Amazon Store">
                     <h3>Amazon Store</h3>
                     <a href="#" class="btn">Visit Amazon</a>
                 </div>

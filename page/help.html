@@ -72,7 +72,7 @@
     color: #0d6efd;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .accordion {
     margin: 1.5rem;
   }
@@ -83,11 +83,25 @@
   .accordion-body {
     font-size: 0.9rem;
   }
-}
+} */
+@media (max-width:900px) and (min-width:700px){
+        .store-card{
+            width: 370px;
+        }
+        .header-a{
+            display: flex;
+            background-color: aqua;
+            justify-content: center;
+        }
+        header{
+            width:108% ;
+        }
+
+ }
 /* Footer */
 .footer {
   padding: 10px 20px 0;
-  background-color:pink;
+  background-color:rgb(0, 0, 0);
 
   .footer-container {
     display: flex;
@@ -161,7 +175,7 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    background-color: pink;
+    background-color: rgb(0, 0, 0);
     padding: 20px 0;
     font-size: 15px;
     color: #ffffff;
@@ -194,6 +208,12 @@
   
 }
  @media (max-width:428px){
+    header{
+        display: none;
+    }
+    .faq-section p{
+        display: none;
+    }
         .footer-container{
             display: flex;
             margin: 0px 0px;
@@ -221,6 +241,13 @@
 
             margin-left: 15px;
             overflow-x: hidden;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+        }
+        .footer-1{
+            background-color: black;
         }
 
     }
@@ -355,71 +382,76 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-about">
-                <div class="logo-footer"><img src="/image/logo skin.png" alt=""></div>
-                <p>is a botanical skincare brand aiming to nourish, protect, and enhance your skin using natural, plant-based solutions. The logo suggests trust, health, and organic beauty.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+    <footer >
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="logo-footer"><img src="/image/logo skin.png" alt=""></div>
+                    <p>is a botanical skincare brand aiming to nourish, protect, and enhance your skin using natural, plant-based solutions. The logo suggests trust, health, and organic beauty.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h3>GROWSKIN</h3>
+                        <ul>
+                            <li><a href="#">Your trusted skincare</a></li>
+                            <li><a href="#">partner for natural,</a></li>
+                            <li><a href="#">radiant, and</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">cruelty-free beauty.</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>OUR PAGES</h3>
+                        <ul>
+                            <li><a href="/index.html">Home Page</a></li>
+                            <li><a href="/page/face skin.html">Product Page</a></li>
+                            <li><a href="/page/store.html">Store Page</a></li>
+                            <li><a href="/page/help.html">Help Page</a></li>
+                            <li><a href="/page/contact.html">Contact Page</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>SERVICES</h3>
+                        <ul>
+                            <li><a href="#">Sun Skin</a></li>
+                            <li><a href="#">Face Skin</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Sunscreen</h3>
+                        <ul>
+                            <li><a href="#">Face Sunscreen</a></li>
+                            <li><a href="#">Body SunScreen</a></li>
+                            <li><a href="#">Kids & Sensitive Skin</a></li>
+                            <li><a href="#">After Sun Care</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Makeup Category</h3>
+                        <ul>
+                            <li><a href="#">Face Shop</a></li>
+                            <li><a href="#">Eyes Shop</a></li>
+                            <li><a href="#">Lips Shop</a></li>
+                            <li><a href="#">Tools & Accessories Shop</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-links">
-                <div>
-                    <h3>GROWSKIN</h3>
-                    <ul>
-                        <li><a href="#">Your trusted skincare</a></li>
-                        <li><a href="#">partner for natural,</a></li>
-                        <li><a href="#">radiant, and</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">cruelty-free beauty.</a></li>
-                    </ul>
+            <hr>
+            <div class="footer-bottom">
+                <div class="footer-1">
+                    <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+                    <div class="bottom-links">
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Support</a>
+                    </div>
                 </div>
-                <div>
-                    <h3>OUR PAGES</h3>
-                    <ul>
-                        <li><a href="/index.html">Home Page</a></li>
-                        <li><a href="/page/face skin.html">Product Page</a></li>
-                        <li><a href="/page/store.html">Store Page</a></li>
-                        <li><a href="/page/help.html">Help Page</a></li>
-                        <li><a href="/page/contact.html">Contact Page</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>SERVICES</h3>
-                    <ul>
-                        <li><a href="#">Sun Skin</a></li>
-                        <li><a href="#">Face Skin</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Sunscreen</h3>
-                    <ul>
-                        <li><a href="#">Face Sunscreen</a></li>
-                        <li><a href="#">Body SunScreen</a></li>
-                        <li><a href="#">Kids & Sensitive Skin</a></li>
-                        <li><a href="#">After Sun Care</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Makeup Category</h3>
-                    <ul>
-                        <li><a href="#">Face Shop</a></li>
-                        <li><a href="#">Eyes Shop</a></li>
-                        <li><a href="#">Lips Shop</a></li>
-                        <li><a href="#">Tools & Accessories Shop</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
-            <div class="bottom-links">
-                <a href="#">Terms</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Support</a>
             </div>
         </div>
     </footer>

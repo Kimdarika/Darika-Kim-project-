@@ -814,6 +814,11 @@ article .store .store-container {
     height: 50vh;
   }
 }
+@media (max-width: 400px) and (min-width: 300px) {
+  article .search-filters {
+    margin-left: -2000px;
+  }
+}
 
 form {
   width: 100%;

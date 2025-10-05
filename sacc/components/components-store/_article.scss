@@ -407,4 +407,9 @@ article{
            height: 50vh;
         }
     }
+    @media (max-width: 400px) and (min-width: 300px) {
+        .search-filters{
+            margin-left: -2000px;
+        }
+    }
 }

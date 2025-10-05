@@ -301,7 +301,12 @@ main .contact-support .contact-form button {
 main .contact-support .contact-form button:hover {
   background: #ffb199;
 }
-
+footer{
+  background-color: #151515;
+}
+.footer-bottom{
+  background-color: #151515;
+}
 footer .footer-all {
   background-color: rgb(148, 147, 146);
   display: flex;
