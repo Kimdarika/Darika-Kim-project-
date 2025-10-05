@@ -59,6 +59,19 @@
         }
 
     }
+    @keyframes pulse-green {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 orange; /* grow-green with 40% opacity */
+    }
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 10px rgba(75, 106, 90, 0); /* fades out */
+        }
+    }
+    .animate-pulse-stock {
+        animation: pulse-green 2s infinite ease-out;
+    }
 </style>
 <body>
     <header>
@@ -82,10 +95,10 @@
     <main>
         <div class="hero">
             <div class="container hero-content">
-                <div class="hero-text">
+                <div class="hero-text ">
                     <h1>Protect & <span>Soothe Your </span>Skin in the Sun</h1>
                     <p>why sun protection & after-sun care matter.</p>
-                    <a href="/page/shop.html" class="btn">Shop Now</a>
+                    <a href="/page/shop.html" class="btn animate-pulse-stock">Shop Now</a>
                 </div>
                 <img class="hero-img" src="https://i.pinimg.com/736x/ce/4b/68/ce4b68cb6ad0a950528afa58eadb0f79.jpg" alt="Beauty Model" />
             </div>
@@ -97,25 +110,25 @@
                     <img src="https://i.pinimg.com/736x/1b/a3/a4/1ba3a41c1b315ab889a76238fa0bc65c.jpg" alt="Face Sunscreen">
                     <h3>Face Sunscreen</h3>
                     <p>SPF 30+ | Tinted | Mineral & Chemical</p>
-                    <a href="./face/face-sun-screen.html" class="btn">Shop Face</a>
+                    <a href="./face/face-sun-screen.html" class="btn animate-pulse-stock">Shop Face</a>
                 </div>
                 <div class="category-card">
                     <img src="https://i.pinimg.com/1200x/18/f1/8f/18f18f75686d030091e12878a16b9dd2.jpg" alt="Body Sunscreen">
                     <h3>Body Sunscreen</h3>
                     <p>Lotions, Sprays & Sticks</p>
-                    <a href="./face/Body-Sunscreen.html" class="btn">Shop Body</a>
+                    <a href="./face/Body-Sunscreen.html" class="btn animate-pulse-stock">Shop Body</a>
                 </div>
                 <div class="category-card">
                     <img src="https://i.pinimg.com/1200x/6d/36/a9/6d36a9b89581fa7fd95247ef45457bf0.jpg" alt="Kids Sunscreen">
                     <h3>Kids & Sensitive Skin</h3>
                     <p>Gentle & Hypoallergenic</p>
-                    <a href="./face/Kids-Sensitive-Skin.html" class="btn">Shop Kids</a>
+                    <a href="./face/Kids-Sensitive-Skin.html" class="btn animate-pulse-stock">Shop Kids</a>
                 </div>
                 <div class="category-card">
                     <img src="https://i.pinimg.com/1200x/38/60/e1/3860e131f1ab93a412fec2eaea6fbe97.jpg" alt="After-Sun Care">
                     <h3>After-Sun Care</h3>
                     <p>Lotions, Gels & Soothing Creams</p>
-                    <a href="./face/After-Sun-Care.html" class="btn">Shop Now</a>
+                    <a href="./face/After-Sun-Care.html" class="btn animate-pulse-stock">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -126,25 +139,25 @@
                     <img src="https://i.pinimg.com/736x/28/2c/6e/282c6ef4085adef2579c87e50b57ed90.jpg" alt="Face Sunscreen">
                     <h3>Face</h3>
                     <p>Foundation, Primer, Concealer, Blush</p>
-                    <a href="./face/makeup-Face.html" class="btn">Shop Face</a>
+                    <a href="./face/makeup-Face.html" class="btn animate-pulse-stock">Shop Face</a>
                 </div>
                 <div class="category-card">
                     <img src="https://i.pinimg.com/1200x/18/f4/27/18f427c741bd5f57b71e8bc6556054f5.jpg" alt="Body Sunscreen">
                     <h3>Eyes</h3>
                     <p>LEyeshadow, Mascara, Eyeliner</p>
-                    <a href="./face/makeup-Face-eyes.html" class="btn">Shop Eyes</a>
+                    <a href="./face/makeup-Face-eyes.html" class="btn animate-pulse-stock">Shop Eyes</a>
                 </div>
                 <div class="category-card">
                     <img src="https://i.pinimg.com/736x/7e/db/d0/7edbd0970f7dd8152a0bca512c8bfc8e.jpg" alt="Kids Sunscreen">
                     <h3>Lips</h3>
                     <p>Lipstick, Lip Balm, Gloss</p>
-                    <a href="./face/makeup-Face-lips.html" class="btn">Shop Kids</a>
+                    <a href="./face/makeup-Face-lips.html" class="btn animate-pulse-stock">Shop Kids</a>
                 </div>
                 <div class="category-card">
                     <img src="https://i.pinimg.com/736x/ad/7b/9c/ad7b9c97c669ab85e7989d5714942701.jpg" alt="After-Sun Care">
                     <h3>Tools & Accessories</h3>
                     <p>Brushes, Sponges, Applicators</p>
-                    <a href="./face/tools-accessories.html" class="btn">Shop Tools</a>
+                    <a href="./face/tools-accessories.html" class="btn animate-pulse-stock">Shop Tools</a>
                 </div>
             </div>
         </div>

@@ -93,6 +93,25 @@
         }
 
     }
+    .store-card a{
+        background-color: orange;
+    }
+    @keyframes pulse-green {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 orange; /* grow-green with 40% opacity */
+    }
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 8px rgba(75, 106, 90, 0); /* fades out */
+        }
+    }
+    .animate-pulse-stock {
+        animation: pulse-green 2s infinite ease-out;
+    }
+    .animate-pulse-stock-1 {
+        animation: pulse-green 2s infinite ease-out;
+    }
 </style>
 <body>
     <header>
@@ -118,8 +137,8 @@
             <div class="hero">
                 <div class="hero-buttons">
                     <h1 class="h1-head"> Find Our Products Near You </h1><br>
-                    <a href="#" class="btn-primary">Shop Online</a>
-                    <a href="#" class="btn-secondary">Visit Our Stores</a>
+                    <a href="#" class="btn-primary animate-pulse-stock ">Shop Online</a>
+                    <a href="#" class="btn-secondary ">Visit Our Stores</a>
                 </div>
                 <div class="col-lg-6 text-center">
                     <img src="https://i.pinimg.com/1200x/81/1b/5d/811b5db71b7a465ef20f68091c37b96b.jpg" class="img-fluid" alt="Hero image">
@@ -136,32 +155,32 @@
                 <div class="store-card">
                     <img src="https://i.pinimg.com/1200x/2d/a2/15/2da21580960182c4af856b2d3fa40f21.jpg" alt="Shopify Store">
                     <h3>Shopify Store</h3>
-                    <a href="#" class="btn">Visit Shopify</a>
+                    <a href="#" class="btn animate-pulse-stock ">Visit Shopify</a>
                 </div>
                 <div class="store-card">
                     <img src="https://i.pinimg.com/736x/d8/f1/08/d8f108b8fa97426d893a8abdbd40dfe6.jpg" alt="Amazon Store">
                     <h3>Amazon Store</h3>
-                    <a href="#" class="btn">Visit Amazon</a>
+                    <a href="#" class="btn animate-pulse-stock ">Visit Amazon</a>
                 </div>
                 <div class="store-card">
                     <img src="https://i.pinimg.com/1200x/58/a3/24/58a324fcbed985e29c20f4072d1e2b01.jpg" alt="Amazon Store">
                     <h3>Amazon Store</h3>
-                    <a href="#" class="btn">Visit Amazon</a>
+                    <a href="#" class="btn animate-pulse-stock ">Visit Amazon</a>
                 </div>
                 <div class="store-card">
                     <img src="https://i.pinimg.com/1200x/64/93/e4/6493e48c2e7b77f3d8e894a15068116e.jpg" alt="Amazon Store">
                     <h3>Amazon Store</h3>
-                    <a href="#" class="btn">Visit Amazon</a>
+                    <a href="#" class="btn animate-pulse-stock ">Visit Amazon</a>
                 </div>
                 <div class="store-card">
                     <img src="https://i.pinimg.com/736x/12/94/20/129420194bd582ef11f612b5dedc9d9d.jpg" alt="Amazon Store">
                     <h3>Amazon Store</h3>
-                    <a href="#" class="btn">Visit Amazon</a>
+                    <a href="#" class="btn animate-pulse-stock ">Visit Amazon</a>
                 </div>
                 <div class="store-card">
                     <img src="https://i.pinimg.com/1200x/81/1b/5d/811b5db71b7a465ef20f68091c37b96b.jpg" alt="Your Store">
                     <h3>My Store</h3>
-                    <a href="#" class="btn">Visit Store</a>
+                    <a href="#" class="btn animate-pulse-stock ">Visit Store</a>
                 </div>
             </div>
         </div>
@@ -218,25 +237,25 @@
                 <div class="category-card">
                 <img src="https://i.pinimg.com/736x/e5/74/15/e574150b162e0e07982257048d2c06e7.jpg" alt="Skincare">
                 <h3>Skincare</h3>
-                <a href="#" class="btn">Shop Skincare</a>
+                <a href="#" class="btn animate-pulse-stock ">Shop Skincare</a>
                 </div>
 
                 <div class="category-card">
                 <img src="https://i.pinimg.com/736x/46/44/cb/4644cb54386193e78af0f1198a1e140a.jpg" alt="Bodycare">
                 <h3>Haircare</h3>
-                <a href="#" class="btn">Shop Haircare</a>
+                <a href="#" class="btn animate-pulse-stock ">Shop Haircare</a>
                 </div>
 
                 <div class="category-card">
                 <img src="https://i.pinimg.com/736x/e3/6c/03/e36c038abdcd3437646b3ace0f8f4ff8.jpg" alt="Bestsellers">
                 <h3>Bestsellers</h3>
-                <a href="#" class="btn">See Top Picks</a>
+                <a href="#" class="btn animate-pulse-stock ">See Top Picks</a>
                 </div>
 
                 <div class="category-card">
                 <img src="https://i.pinimg.com/1200x/15/8b/fd/158bfd140019b636b33920f152470c0d.jpg" alt="New Arrivals">
                 <h3>New Arrivals</h3>
-                <a href="#" class="btn">Shop New</a>
+                <a href="#" class="btn animate-pulse-stock ">Shop New</a>
                 </div>
             </div>
         </div>
@@ -335,16 +354,16 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do <strong>eiusmod tempor</strong> incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <strong>eiusmod tempor</strong> incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 </div>
-                <a href="#" class="btn">BUY NOW</a>
+                <a href="#" class="btn animate-pulse-stock ">BUY NOW</a>
                 <div class="footer-text">
                     <p><em>Consectetur adipiscing elit, sed do eiusmod tempor incididunt.</em></p>
                 </div>
                 <div class="socials">
                     <p>FOLLOW US @username</p>
-                    <div class="icons">
-                        <img src="https://i.pinimg.com/1200x/88/5c/fc/885cfcaee29afc98d8649339c8e5a610.jpg" alt="Instagram">
-                        <img src="https://i.pinimg.com/1200x/b1/51/cf/b151cf0908062a87a7604ff50006f32f.jpg" alt="Facebook">
-                        <img src="https://i.pinimg.com/736x/42/10/19/421019b348c200d3f875585b062c64d0.jpg" alt="YouTube">
+                    <div class="icons ">
+                        <img class="animate-pulse-stock-1 "  src="/image/web.png" alt="Instagram">
+                        <img class="animate-pulse-stock-1 " src="/image/daka.png" alt="Facebook">
+                        <img class="animate-pulse-stock-1" src="/image/mak.png" alt="YouTube">
                     </div>
                 </div>
             </div>

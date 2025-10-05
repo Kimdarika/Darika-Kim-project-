@@ -223,6 +223,19 @@ span{
     overflow-x: hidden;
   }
 }
+@keyframes pulse-green {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 orange; /* grow-green with 40% opacity */
+    }
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 10px rgba(75, 106, 90, 0); /* fades out */
+        }
+}
+.animate-pulse-stock {
+    animation: pulse-green 2s infinite ease-out;
+}
 
 
 
@@ -250,7 +263,7 @@ span{
         <h1 class="text">Skin Care <span>Products</span> </h1>
         <h1 class="text">Secrets Of Beauty</h1>
         <p>skin care product is a cosmetic formulation used to clean, protect, nourish, and enhance the health and appearance of the skin</p>
-        <button class="btn"><a href="./shop.html">Shop Now</a></button>
+        <button class="btn animate-pulse-stock" ><a href="./shop.html ">Shop Now</a></button>
     </aside>
     <section class="product-highlights">
         <img class="features" src="https://i.pinimg.com/736x/dd/00/c7/dd00c7549a1f6e887ba076805f00a4b1.jpg" alt="Skincare" />
@@ -265,7 +278,7 @@ span{
                 Shop all the newest arrivals and bestsellers today. Free 
                 Shipping on orders over $50.
             </div>
-            <button class="shop-now-button-light">
+            <button class="shop-now-button-light animate-pulse-stock">
                 <a  href="/page/shop.html">SHOP NOW</a>
             </button>
         </div>
@@ -275,25 +288,25 @@ span{
     <section class="promotions">
         <div class="promo-tile">
             <img src="https://i.pinimg.com/1200x/37/09/da/3709da76d3dacef654602144f5e499c1.jpg" alt="Model">
-        <button class="btn"><a  href="/page/shop.html">SHOP NOW</a></button>
+        <button class="btn animate-pulse-stock"><a  href="/page/shop.html">SHOP NOW</a></button>
         </div>
         <div class="promo-tile text-tile">
             <img src="https://i.pinimg.com/1200x/fb/8b/02/fb8b02c1e54c534c2f4280e5681e74fa.jpg" alt="">
             <h3>Bundle Deal</h3>
             <p>Buy 1 get 1 50% off</p>
-            <button class="btn"><a  href="/page/shop.html">SHOP NOW</a></button>
+            <button class="btn animate-pulse-stock"><a  href="/page/shop.html">SHOP NOW</a></button>
         </div>
         <div class="promo-tile text-tile">
             <img src="https://i.pinimg.com/1200x/19/8a/94/198a947c19746f1425093b5123376c37.jpg" alt="">
             <h3>0% Financing</h3>
             <p>Pay later with interest-free options</p>
-            <button class="btn"><a  href="/page/shop.html">SHOP NOW</a></button>
+            <button class="btn animate-pulse-stock"><a  href="/page/shop.html">SHOP NOW</a></button>
         </div>
 
 
         <div class="promo-tile">
         <img src="https://i.pinimg.com/1200x/85/0d/86/850d869779b717c2f4269e7d1ffb71af.jpg" alt="Brush Set">
-        <button class="btn">Shop Now</button>
+        <button class="btn animate-pulse-stock">Shop Now</button>
         </div>
     </section>
 
@@ -307,17 +320,17 @@ span{
         <div class="category">
         <h4>💄 Lipsticks</h4>
         <p>Explore our premium lipstick collection for bold and soft looks.</p>
-        <button class="btn">Shop Now</button>
+        <button class="btn animate-pulse-stock">Shop Now</button>
         </div>
         <div class="category">
         <h4>🧴 Foundations</h4>
         <p>Flawless coverage in every shade for all skin types.</p>
-        <button class="btn">Shop Now</button>
+        <button class="btn animate-pulse-stock">Shop Now</button>
         </div>
         <div class="category">
         <h4>🧼 Skincare</h4>
         <p>Hydrate and glow with dermatologist-approved skincare.</p>
-        <button class="btn">Shop Now</button>
+        <button class="btn animate-pulse-stock">Shop Now</button>
         </div>
     </section>
     <footer class="footer">
@@ -325,7 +338,7 @@ span{
             <div class="footer-about">
                 <div class="logo-footer"><img src="/image/logo skin.png" alt=""></div>
                 <p>is a botanical skincare brand aiming to nourish, protect, and enhance your skin using natural, plant-based solutions. The logo suggests trust, health, and organic beauty.</p>
-                <div class="d-flex gap-3">
+                <div class="d-flex gap-3 ">
                     <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
